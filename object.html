@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Город Спутник</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+	$(function() {
+		var pull 		= $('#pull');
+			menu 		= $('.menu-items');
+			menuHeight	= menu.height();
+
+		$(pull).on('click', function(e) {
+			e.preventDefault();
+			menu.slideToggle();
+		});
+
+		$(window).resize(function(){
+			var w = $(window).width();
+			if(w > 320 && menu.is(':hidden')) {
+				menu.removeAttr('style');
+			}
+		});
+	});
+</script>
+
+</head>
+
+<body>
+
+    <div id="page-surround"><!--page surround -->
+    	<div id="header"><!--header -->
+        	<div class="top"><!--header top-->
+            	<div class="container">
+					<div id="logo"><img src="img/logo.png" /></div>
+                    <div class="top-tel">
+                    	<p><strong>(841-2) 00-00-00</strong><span> (телефон)</span></p><p><strong>(841-2) 00-00-01</strong><span> (факс)</span></p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div><!--/header top-->
+            <div class="menu"><!--header bottom-->
+            	<div class="container">
+                	<ul class="menu-items">
+                    	<li><a href="#">О Спутнике</a></li>
+                        <li><a href="#">Объекты</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Фотогалерея</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <div class="clear"></div>
+                    </ul>
+                    <a href="#" id="pull"><span>Меню</span></a>
+                    <div id="search">
+                    	<div class="search-button"><input type="button" /></div>
+                        <div class="search-field"><input type="text" value="поиск..."/></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>            
+            </div><!--header bottom-->
+        </div><!--/header -->
+        
+        <div id="content"><!--content-->
+        	<div class="container">
+            	<div class="breadcrumbs"><a href="#"><img src="img/home-ico.png" width="16" height="16"></a> &gt; <a href="#">Объекты</a> &gt; <a href="#">Жилые</a></div>
+            	<div class="left-block w600"><!-- lb -->
+                	<div class="block"><!-- block-->
+                    	<h2>Жилой дом № 14</h2>
+                        <p>Участок под строительство 10-ти этажного жилого дома №14 расположен в с.Засечное Пензенского района Пензенской области в районе микрорайона №5 «Терновка» в планировочной зоне Ж-3.</p>
+                        
+                        <p>С северной стороны примыкает к участку магазина «МЭТРО КЭШ ЭНД КЭРРИ», с западной стороны примыкает к участку «Петровский квартал», с восточной стороны ограничен ж/д 16 (стр.), с южной стороны примыкает к участку 10-ти этажного ж/д.</p>
+                        
+                        <p>Для строительства жилого дома применялись современные и долговечные материалы. Дом состоит из 2-х блок - секций. Пластика фасада решена разнообразием лоджий и балконов. Уникальная для Пензенской области система отделки фасада создает хорошую теплоизоляцию.</p>
+                        
+                        <p>В доме предусмотрены однокомнатные квартиры, квартиры студии и двухкомнатные квартиры. На жилых этажах размещены однокомнатные квартиры площадью от 27,9 до 41,0 кв.м., двухкомнатные квартиры площадью от 49,6 до 56,7 кв.м.</p>
+                        
+                        <p>В доме предусматривается: водяное отопление по независимой схеме через подогреватели, вытяжная вентиляция с естественным побуждением, горячее водоснабжение с циркуляционным трубопроводом через подогреватели, оборудование кухонь газовыми плитами, установленными оконными и балконными блоками из ПВХ.</p>
+                        
+                        <p>Город Спутник в микрорайоне Терновка, это уникальное, красивейшее место со своей инфраструктурой, хорошей экологией и тишиной для безмятежной жизни.</p>
+                        
+                        <p>Участок, на котором стоит новый дом, озеленяется, имеет детскую площадку, прогулочные дорожки. Проезд к дому обеспечен удобными дорожными развязками. Проектом предусмотрены площадки для отдыха детей дошкольного возраста, взрослого населения, хозяйственная площадка, стоянки для автомобилей. Рядом с домом находятся продовольственные магазины и медицинские учреждения.</p>
+                        
+                        <p>Жизнь в Спутнике разнообразна множеством различных мероприятий. В зимнее время: подледная рыбалка, катание на снегоходах, новогодняя ёлка, спартакиады. А летом жителей города ждет знаменитый пляж Лазурный берег, который располагается в 5 минутах ходьбы по чистой, благоустроенной пешеходной дорожке.  </p>
+                	</div><!-- /block-->
+                      <div class="block"><!-- block-->
+                        <h2>Комментарии</h2>
+                        <img src="img/comm.png" width="100%" height="auto">
+                      </div><!-- /block-->  
+                </div><!-- /lb -->
+                <div class="right-block w300"><!--rb-->
+                	<div class="block"><!-- block-->
+                      <div class="objects-inner">
+                            <div class="object">
+                                <div class="image"><img src="img/obj6.jpg"></div>
+                                <div class="description">
+                                    <div class="small-gallery">
+                                    	<a href="#" ><img src="img/obj-g-1.jpg"></a>
+                                        <a href="#" class="selected"><img src="img/obj-g-2.jpg"></a>
+                                        <a href="#"><img src="img/obj-g-3.jpg"></a>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="progressbar">
+                                        <div class="bar-line">
+                                            <div style="width:65%;" class="middle"></div>
+                                            <span>Продано: 65%</span>
+                                        </div>
+                                    </div>
+                                    <div class="status"><span class="completed"><i></i>Построен</span></div>
+                                </div>
+                            </div>
+                       </div>  
+                    </div><!-- /block-->
+                    <div class="block"><!-- block-->
+                    	<div class="order-button">
+                        	<div class="order-b-content">Заполните заявку на квартиру...</div>
+                        	<p>И наш сотрудник свяжется с вами в удобное для вас время</p>
+                        </div>
+                    </div><!-- block-->
+                    <div class="block"><!-- block-->
+                        <img src="img/social.png" width="100%" height="auto">
+                    </div><!-- block-->
+                    <div class="block"><!-- block-->
+                    	<div class="adress">
+                            <p class="adress-icon"><strong>мрн. Терновка, г. Спутник,<br />за магазином METRO C&amp;C<br />ул. Радужная д. 1, 2 этаж</strong></p>
+                            <p class="mail-icon">termodom-pnz@mail.ru</p>
+                        </div>
+                    </div><!-- block-->
+                </div><!--/rb-->
+                <div class="clear"></div>
+            </div>
+        </div><!--/content-->
+        
+        <div id="bottom"><!--bottom-->
+        	<div class="container">
+                <div class="copyright">© 2012 Строительный холдинг «Термодом»</div>
+                <div class="branding"><a href="http://divasoft.ru" target="_blank"><img src="img/branding.png" width="76" height="18"></a></div>
+                <div class="clear"></div>            
+          </div>
+        </div><!--/bottom-->
+        
+    </div><!--/page surround -->
+
+</body>
+</html>

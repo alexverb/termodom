@@ -1,0 +1,122 @@
+
+
+/* MOBILE LAYOUT (PORTRAIT/320PX)
+----------------------------------------------- */
+
+@media only screen and (max-width: 300px) { 
+	.top-tel p span {display:none;}
+}
+
+
+@media only screen and (max-width: 460px) {
+
+.container {width:100%;}
+.w640, .w260, .w360, .w540, .w300, .w600, .w940
+ {width:auto;}
+#content .left-block, #content .right-block {float:none;}
+.objects .item, .photo-stream .photo-col {width:100%; float:none;}
+#search {display:none;}
+.icon {display:none;}
+#pull {display:block;}
+.menu ul.menu-items {display:none; margin:0 0 10px 0;}
+.menu ul.menu-items li {display:block; float:none; margin:5px 15px;}
+#logo img {display:none;}
+#logo {background:url(../img/sputnik-ico-logo.png) center center no-repeat; height:38px; width:38px; }
+.branding {float:none; margin-right:0; text-align:center;}
+.copyright {float:none; margin-left:0; text-align:center;}
+.adress .adress-icon, .adress .mail-icon {background:none; padding-left:0;}
+.dvs-image + .dvs-image {margin: 15px auto 0 auto;}
+.dvs-image {display:block; margin:auto;}
+}
+
+@media only screen and (min-width: 461px) and (max-width: 540px) {
+
+.container {width:100%;}
+.w640, .w260, .w360, .w540, .w300, .w600, .w940
+ {width:auto;}
+#content .left-block, #content .right-block {float:none;}
+.objects .item, .photo-stream .photo-col {width:50%; float:left;}
+#search {display:none;}
+.icon {display:none;}
+#pull {display:block;}
+.menu ul.menu-items {display:none; margin:0 0 10px 0;}
+.menu ul.menu-items li {display:block; float:none; margin:5px 15px;}
+.dvs-image + .dvs-image {margin: 15px auto 0 auto;}
+.dvs-image {display:block; margin:auto;}
+
+}
+@media only screen and (min-width: 541px) and (max-width: 640px) {
+
+.container {width:100%;}
+.w640, .w260, .w360, .w540, .w300, .w600, .w940
+ {width:auto;}
+#content .left-block, #content .right-block {float:none;}
+.objects .item, .photo-stream .photo-col {width:50%; float:left;}
+#search {display:none;}
+.icon {display:none;}
+.news-block {float:none; width:auto; clear:both;}
+.fr {float:left; width:50%;}
+.order-button {margin:0;}
+.adress {margin-left:20px;}
+.adress p {margin-top:0;}
+.dvs-image + .dvs-image {margin: 15px auto 0 auto;}
+.dvs-image {display:block; margin:auto;}
+
+
+}
+
+
+
+@media only screen and (min-width: 641px) and (max-width: 720px) {
+
+.container {width:100%;}
+.w640, .w260, .w360, .w540, .w300, .w600, .w940
+ {width:auto;}
+#content .left-block, #content .right-block {float:none;}
+.objects .item, .photo-stream .photo-col {width:33%; float:left;}
+#search {display:none;}
+.icon {display:none;}
+.news-block {float:none; width:auto; clear:both;}
+.fr {float:left; width:50%;}
+.order-button {margin:0;}
+.adress {margin-left:20px;}
+.adress p {margin-top:0;}
+.dvs-image + .dvs-image {margin: 15px auto 0 auto;}
+.dvs-image {display:block; margin:auto;}
+
+
+
+}
+
+@media only screen and (min-width: 721px) and (max-width: 800px) { 
+
+.container {width:100%;}
+.w640, .w260, .w360, .w540, .w300, .w600, .w940
+ {width:auto;}
+#content .left-block, #content .right-block {float:none;}
+.objects .item, .photo-stream .photo-col {width:33%; float:left;}
+.icon {display:none;}
+.news-block {float:none; width:auto; clear:both;}
+.fr {float:left; width:50%;}
+.order-button {margin:0;}
+.adress {margin-left:20px;}
+.adress p {margin-top:0;}
+
+.dvs-image + .dvs-image {margin: 15px auto 0 auto;}
+
+
+
+}
+
+
+@media only screen and (min-width: 801px) and (max-width: 959px) {
+.container {width:100%;}
+.w640, .w260, .w360, .w540, .w300, .w600, .w940
+ {width:auto;}
+#content .left-block, #content .right-block {float:none;}
+.icon {display:none;}
+.oi {float:left; width:320px;}
+.news-block {float:left; width:50%;}
+.fr {float:right; width:50%;}
+.order-button {margin:0;}
+}
