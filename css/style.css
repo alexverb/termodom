@@ -86,6 +86,7 @@ p {font-size:12pt; line-height:140%; color:#333;}
 .col4 .item {width:25%;}
 .objects .item .object{position:relative; width:95%; background-color:#fff;}
 
+.object-inside-block {width:400px; position: relative; float: left; margin-right: 15px; z-index: 3; }
 .objects-inner {position:relative;}
 .objects-inner .object{position:relative; margin:auto; background-color:#fff;}
 
@@ -111,7 +112,7 @@ p {font-size:12pt; line-height:140%; color:#333;}
 	.object .image a {display:block;}
 	.object .image img {max-width:100%;border-radius:8px 8px 0 0; display:block;}
 	.objects-inner .image {}
-	.objects-inner .image img {max-width:100%;border-radius:8px 8px 0 0; display:block;}
+	.objects-inner .image img {max-width:100%;border-radius:8px 8px 0 0; display:block; width: 100%;}
 	.objects-inner .small-gallery {position:relative; margin-bottom:5px; padding-bottom:5px;border-bottom:#ccc 1px solid;}
 		.small-gallery a {display:block; float:left; border:3px solid #999; border-radius:3px; height:48px; margin-right:10px;}
 		.small-gallery a.selected {border-color:#f93;}
@@ -120,6 +121,7 @@ p {font-size:12pt; line-height:140%; color:#333;}
 	.object .name a {text-decoration:none;}
 	.object .status {padding:5px 0;}
 	.object .status span {padding:3px 15px 3px 25px; color:#fff; font-size:10pt; border-radius:12px; box-shadow:inset 0 0 1px 0 rgba(255,255,255,0.41); position:relative;}
+	.object .status .check-plan {padding-right: 25px; float: right; text-decoration: none; color: #999; font-weight: normal; background: url(../img/check-plan.png) no-repeat right center;}
 	.object .status span.completed, .object .progressbar .bar-line .low  {background: #9cce14; /* Old browsers */
 									background: -moz-linear-gradient(top,  #9cce14 0%, #6ea603 100%); /* FF3.6+ */
 									background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9cce14), color-stop(100%,#6ea603)); /* Chrome,Safari4+ */
@@ -172,7 +174,8 @@ p {font-size:12pt; line-height:140%; color:#333;}
 .news-list ul li span {display:block; color:#999; font-size:10pt;}
 .news-list ul li a {display:block; margin-bottom:15px; font-size:12pt;}
 
-.order-button {position:relative; margin:35px 0; }
+.order-button {position:relative;}
+.right-block .order-button {margin:35px 0; }
 .order-button p {margin:0; padding:5px 0; color:#999; font-style:italic;}
 .order-button .order-b-content {display:block; position:relative; border-radius:8px; padding:10px 15px 18px 15px; font-size:16pt; color:#fff;cursor:pointer;
 								background: #fdb283; /* Old browsers */
@@ -225,7 +228,7 @@ p {font-size:12pt; line-height:140%; color:#333;}
 .dvs-image {padding:3px; background-color:#fff; border-radius:3px; box-shadow:0 0 30px -10px #ccc; max-width:100%; height:auto;}
 .dvs-image + .dvs-image {margin-left:15px;}
 
-.breadcrumbs {position:relative; margin:0 10px 10px 10px; color:#046e8b; font-size:10pt; line-height:16px;}
+.breadcrumbs {position:relative; margin:0 10px 10px 0; color:#046e8b; font-size:10pt; line-height:16px;}
 .breadcrumbs a{font-size:10pt; line-height:16px;}
 
 .news-block-full {position:relative;}
