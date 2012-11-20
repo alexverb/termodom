@@ -7,6 +7,10 @@
 	.top-tel p span {display:none;}
 }
 
+@media only screen and (max-width: 320px) { 
+	.objects-inner .small-gallery {display:none;}
+}
+
 
 @media only screen and (max-width: 460px) {
 
@@ -27,6 +31,7 @@
 .adress .adress-icon, .adress .mail-icon {background:none; padding-left:0;}
 .dvs-image + .dvs-image {margin: 15px auto 0 auto;}
 .dvs-image {display:block; margin:auto;}
+.object-inside-block {float:none; width: 100%; margin: auto;}
 }
 
 @media only screen and (min-width: 461px) and (max-width: 540px) {
@@ -43,6 +48,7 @@
 .menu ul.menu-items li {display:block; float:none; margin:5px 15px;}
 .dvs-image + .dvs-image {margin: 15px auto 0 auto;}
 .dvs-image {display:block; margin:auto;}
+.object-inside-block {float:none; width: 400px; margin: auto;}
 
 }
 @media only screen and (min-width: 541px) and (max-width: 640px) {
@@ -61,6 +67,7 @@
 .adress p {margin-top:0;}
 .dvs-image + .dvs-image {margin: 15px auto 0 auto;}
 .dvs-image {display:block; margin:auto;}
+.object-inside-block {float:none; width: 400px; margin: auto;}
 
 
 }
