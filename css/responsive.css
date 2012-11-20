@@ -5,10 +5,12 @@
 
 @media only screen and (max-width: 300px) { 
 	.top-tel p span {display:none;}
+        .contacts .contacts-container h2{font-size: 14pt;}
 }
 
 @media only screen and (max-width: 320px) { 
 	.objects-inner .small-gallery {display:none;}
+        .contacts .contacts-container h2{font-size: 14pt;}
 }
 
 
@@ -32,6 +34,11 @@
 .dvs-image + .dvs-image {margin: 15px auto 0 auto;}
 .dvs-image {display:block; margin:auto;}
 .object-inside-block {float:none; width: 100%; margin: auto;}
+
+.map-block, .contacts {float: none; width: 100%;}
+.contacts .contacts-container {margin: 0;}
+.contacts .contacts-container h2{font-size: 16pt;}
+
 }
 
 @media only screen and (min-width: 461px) and (max-width: 540px) {
@@ -49,6 +56,11 @@
 .dvs-image + .dvs-image {margin: 15px auto 0 auto;}
 .dvs-image {display:block; margin:auto;}
 .object-inside-block {float:none; width: 400px; margin: auto;}
+
+.map-block, .contacts {float: none; width: 100%;}
+.contacts .contacts-container {margin: 0;}
+.contacts .contacts-container h2{font-size: 16pt;}
+
 
 }
 @media only screen and (min-width: 541px) and (max-width: 640px) {
@@ -68,6 +80,11 @@
 .dvs-image + .dvs-image {margin: 15px auto 0 auto;}
 .dvs-image {display:block; margin:auto;}
 .object-inside-block {float:none; width: 400px; margin: auto;}
+
+.map-block, .contacts {float: none; width: 100%;}
+.contacts .contacts-container {margin: 0;}
+.contacts .contacts-container h2{font-size: 16pt;}
+
 
 
 }
@@ -91,6 +108,11 @@
 .dvs-image + .dvs-image {margin: 15px auto 0 auto;}
 .dvs-image {display:block; margin:auto;}
 
+.map-block, .contacts {float: none; width: 100%;}
+.contacts .contacts-container {margin: 0;}
+.contacts .contacts-container h2{font-size: 16pt;}
+
+
 
 
 }
@@ -111,6 +133,10 @@
 
 .dvs-image + .dvs-image {margin: 15px auto 0 auto;}
 
+.map-block, .contacts {float: none; width: 100%;}
+.contacts .contacts-container {margin: 0;}
+.contacts .contacts-container h2{font-size: 16pt;}
+
 
 
 }
@@ -126,4 +152,5 @@
 .news-block {float:left; width:50%;}
 .fr {float:right; width:50%;}
 .right-block .order-button {margin:0;}
+.contacts .contacts-container h2{font-size: 16pt;}
 }

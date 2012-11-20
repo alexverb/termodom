@@ -237,3 +237,9 @@ p {font-size:12pt; line-height:140%; color:#333;}
 .news-block-full .article h3{}
 .news-block-full .article p.date {margin:0; color:#999;}
 .news-block-full .article .article-image {float:left; margin-right:15px;}
+
+.map-block {position: relative; width: 50%; float: left;}
+.contacts {position: relative; width: 50%; float: left;}
+.contacts .contacts-container {margin-left: 10px;}
+.map-block .map-container {position: relative; padding:3px; background-color:#fff; border-radius:3px; box-shadow:0 0 30px -10px #ccc;}
+.map-block .map-container img {display: block;}/*Temporary*/
