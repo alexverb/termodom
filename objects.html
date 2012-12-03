@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/dropdown.js"></script>
 <script>
 	$(function() {
 		var pull 		= $('#pull');
@@ -24,6 +25,7 @@
 				menu.removeAttr('style');
 			}
 		});
+              $('.dropdown-toggle').dropdown() 
 	});
 </script>
 
@@ -67,14 +69,21 @@
             	<div class="left-block w940"><!-- lb -->
                     <div class="block">
                     	<h2>Объекты</h2>
-                        <div class="cat-selector"><!-- cat selector -->
+                        <div class="dropdown-container"><!-- ddcontainer -->
+                            <a href="#" data-toggle="dropdown" class="dropdown-trigger">Вид объекта <i></i></a>
+                            <div class="cat-selector" class="dropdown-menu"><!-- cat selector -->
                         	<span>Всё</span><a href="#">Жилые</a><a href="#">Общественные</a><a href="#">Техн.&nbsp;сооружения</a><a href="#">Парки/Скверы</a>
-                            <div class="clear"></div>
-                        </div><!-- /cat selector -->
-                        <div class="cat-selector"><!-- cat selector -->
+                                <div class="clear"></div>
+                            </div><!-- /cat selector -->
+                        </div><!-- /ddcontainer -->
+                        <div class="dropdown-container"><!-- ddcontainer -->
+                            <a href="#" data-toggle="dropdown" class="dropdown-trigger">Статус <i></i></a>
+                            <div class="cat-selector second"><!-- cat selector -->
                         	<span>Все</span><a href="#">Строятся</a><a href="#">Построенные</a><a href="#">В планах</a>
-                            <div class="clear"></div>
-                        </div><!-- /cat selector -->
+                                <div class="clear"></div>
+                            </div><!-- /cat selector -->
+                        </div>
+                        <div class="clear" ></div>
                         <div class="objects col4">
                         	 <div class="item"><!--item-->
                              	<div class="object">
