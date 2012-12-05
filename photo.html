@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/responsive.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/dropdown.js"></script>
 <script>
 	$(function() {
 		var pull 		= $('#pull');
@@ -24,6 +25,7 @@
 				menu.removeAttr('style');
 			}
 		});
+                $('.dropdown-toggle').dropdown()
 	});
 </script>
 
@@ -68,10 +70,14 @@
             	<div class="left-block w940"><!-- lb -->
                 	<div class="block"><!-- block-->
                     	<h2>Фотогалерея</h2>
-                        <div class="cat-selector"><!-- cat selector -->
-                        	<span>Всё</span><a href="#">Объекты</a><a href="#">Строительство</a>
-                            <div class="clear"></div>
-                        </div><!-- /cat selector -->
+                        <div class="dropdown-container"><!-- ddcontainer -->
+                            <a href="#" data-toggle="dropdown" class="dropdown-trigger">Вид объекта <i></i></a>
+                            <div class="cat-selector" class="dropdown-menu"><!-- cat selector -->
+                        	<span>Всё</span><a href="#">Жилые</a><a href="#">Общественные</a><a href="#">Техн.&nbsp;сооружения</a><a href="#">Парки/Скверы</a>
+                                <div class="clear"></div>
+                            </div><!-- /cat selector -->
+                        </div><!-- /ddcontainer -->
+                        <div class="clear"></div>
                         <div class="photo-stream"><!-- phstr -->
                         	<div class="photo-col"><!-- col -->
                             	<div class="photo">

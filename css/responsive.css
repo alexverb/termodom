@@ -27,7 +27,7 @@
 .menu ul.menu-items {display:none; margin:0 0 10px 0;}
 .menu ul.menu-items li {display:block; float:none; margin:5px 15px;}
 #logo img {display:none;}
-#logo {background:url(../img/sputnik-ico-logo.png) center center no-repeat; height:38px; width:38px; }
+#logo {background:url(img/sputnik-ico-logo.png) center center no-repeat; height:38px; width:38px; }
 .branding {float:none; margin-right:0; text-align:center;}
 .copyright {float:none; margin-left:0; text-align:center;}
 .adress .adress-icon, .adress .mail-icon {background:none; padding-left:0;}
