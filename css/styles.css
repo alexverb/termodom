@@ -38,7 +38,7 @@ p {font-size:12pt; line-height:140%; color:#333;}
 	.menu ul.menu-items li a {text-decoration:none; border-bottom:1px solid #61a3b6;}
 	.menu ul.menu-items li.active {margin:0 7px; padding:0 8px; border-radius:12px; color:#fff;}
 	
-	#pull {display:none; margin: 0 15px; clear:both; background:url(../img/nav-icon.png) right center no-repeat; text-decoration:none;}
+	#pull {display:none; margin: 0 15px; clear:both; background:url(img/nav-icon.png) right center no-repeat; text-decoration:none;}
 	#pull span {border-bottom:1px dashed #046e8b;}
 	
 	#search {position:relative; float:right; margin-right:15px;}
@@ -53,14 +53,14 @@ p {font-size:12pt; line-height:140%; color:#333;}
 	background: linear-gradient(to bottom,  #fdfdfd 0%,#ededed 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
 	}
-	#search .search-button input {display:block; width:100%; height:100%; background:url(../img/search-button.png) center center no-repeat;}
+	#search .search-button input {display:block; width:100%; height:100%; background:url(img/search-button.png) center center no-repeat;}
 	#search .search-field { width:150px; height:20px; padding-left:5px; border-width:1px 1px 1px 0; border-style:solid; border-color:#dbdbdb #ececec #ececec transparent; border-radius:0 12px 12px 0; color:#ccc; float:left;}
 	#search .search-field input {color:#999; padding:0 !important; display:block; height:100%;}
 	
 	
-#map {position:relative; /*overflow:hidden;*/ height:380px; background:url(../img/map.png) center top no-repeat; border-bottom:1px solid #aaa;}
+#map {position:relative; /*overflow:hidden;*/ height:380px; background:url(img/map.png) center top no-repeat; border-bottom:1px solid #aaa;}
 #map:after {}
-#content {position:relative;padding-top:25px; background:url(../img/map-shadow.png) center top no-repeat;}
+#content {position:relative;padding-top:25px; background:url(img/map-shadow.png) center top no-repeat;}
 #content .left-block {position:relative;float:left;  margin:0 10px;}
 #content .right-block {position:relative;float:right; margin:0 10px;}
 	.w640 {width:640px;}
@@ -74,12 +74,12 @@ p {font-size:12pt; line-height:140%; color:#333;}
 
 
 #bottom {position:relative; margin:25px 0;}
-#bottom .container {border-top:1px dashed #999; padding-top:25px; background:url(../img/map-shadow.png) center top no-repeat; background-size:contain;}
+#bottom .container {border-top:1px dashed #999; padding-top:25px; background:url(img/map-shadow.png) center top no-repeat; background-size:contain;}
 	
 	.icon {display:block; width:38px; height:38px; position:absolute; left:-42px; top:0;}
-		.sputnik {background:url(../img/sputnik-image.png) center center no-repeat;}
-		.news-ico {background:url(../img/news-image.png) center center no-repeat;}
-		.obj-ico {background:url(../img/obj-image.png) center center no-repeat;}
+		.sputnik {background:url(img/sputnik-image.png) center center no-repeat;}
+		.news-ico {background:url(img/news-image.png) center center no-repeat;}
+		.obj-ico {background:url(img/obj-image.png) center center no-repeat;}
 .objects {position:relative;}
 .objects .item {position:relative; float:left; margin-bottom:25px;}
 .col3 .item {width:33%;}
@@ -122,7 +122,7 @@ p {font-size:12pt; line-height:140%; color:#333;}
 	.object .status {padding:5px 0;}
 	.object .status span {padding:3px 15px 3px 25px; color:#fff; font-size:10pt; border-radius:12px; box-shadow:inset 0 0 1px 0 rgba(255,255,255,0.41); position:relative;}
 	.object .check-plan-c {border-top: 1px solid #CCCCCC;margin-top: 5px;padding-top: 5px;text-align: center;}
-	.object .check-plan {padding-right: 25px; text-decoration: none; color: #999; font-weight: normal; background: url(../img/check-plan.png) no-repeat right center;}
+	.object .check-plan {padding-right: 25px; text-decoration: none; color: #999; font-weight: normal; background: url(img/check-plan.png) no-repeat right center;}
 	.object .status span.completed, .object .progressbar .bar-line .low  {background: #9cce14; /* Old browsers */
 									background: -moz-linear-gradient(top,  #9cce14 0%, #6ea603 100%); /* FF3.6+ */
 									background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9cce14), color-stop(100%,#6ea603)); /* Chrome,Safari4+ */
@@ -132,7 +132,7 @@ p {font-size:12pt; line-height:140%; color:#333;}
 									background: linear-gradient(to bottom,  #9cce14 0%,#6ea603 100%); /* W3C */
 									filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9cce14', endColorstr='#6ea603',GradientType=0 ); /* IE6-9 */
 									}
-	.object .status span.completed i {display:block; position:absolute; left:10px; top:6px; width:12px; height:12px; background:url(../img/checked.png) center center no-repeat;}
+	.object .status span.completed i {display:block; position:absolute; left:10px; top:6px; width:12px; height:12px; background:url(img/checked.png) center center no-repeat;}
 	.object .status span.in-process, .dropdown-trigger {
 									background: #2e9adf; /* Old browsers */
 									background: -moz-linear-gradient(top,  #2e9adf 0%, #206cca 100%); /* FF3.6+ */
@@ -143,7 +143,7 @@ p {font-size:12pt; line-height:140%; color:#333;}
 									background: linear-gradient(to bottom,  #2e9adf 0%,#206cca 100%); /* W3C */
 									filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e9adf', endColorstr='#206cca',GradientType=0 ); /* IE6-9 */
 									}
-	.object .status span.in-process i {display:block; position:absolute; left:10px; top:6px; width:12px; height:12px; background:url(../img/in-process.png) center center no-repeat;}
+	.object .status span.in-process i {display:block; position:absolute; left:10px; top:6px; width:12px; height:12px; background:url(img/in-process.png) center center no-repeat;}
 	.object .status span.planed, .object .progressbar .bar-line .middle, .cat-selector span, .menu ul.menu-items li.active {background: #ff9933; /* Old browsers */
 									background: -moz-linear-gradient(top,  #ff9933 0%, #ff7b00 100%); /* FF3.6+ */
 									background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff9933), color-stop(100%,#ff7b00)); /* Chrome,Safari4+ */
@@ -153,7 +153,7 @@ p {font-size:12pt; line-height:140%; color:#333;}
 									background: linear-gradient(to bottom,  #ff9933 0%,#ff7b00 100%); /* W3C */
 									filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9933', endColorstr='#ff7b00',GradientType=0 ); /* IE6-9 */
 									}
-	.object .status span.planed i {display:block; position:absolute; left:10px; top:6px; width:12px; height:12px; background:url(../img/planed.png) center center no-repeat;}
+	.object .status span.planed i {display:block; position:absolute; left:10px; top:6px; width:12px; height:12px; background:url(img/planed.png) center center no-repeat;}
 .object .progressbar .bar-line .high{
 									background: #ff3333; /* Old browsers */
 									background: -moz-linear-gradient(top,  #ff3333 0%, #d82b2b 100%); /* FF3.6+ */
@@ -197,8 +197,8 @@ p {font-size:12pt; line-height:140%; color:#333;}
 
 .adress {position:relative;}
 .adress p {color:#046E8B;}
-.adress .adress-icon {padding-left:35px; background:url(../img/adress-i.png) left 8px no-repeat;}
-.adress .mail-icon {padding-left:35px; background:url(../img/mail-i.png) left center no-repeat;}
+.adress .adress-icon {padding-left:35px; background:url(img/adress-i.png) left 8px no-repeat;}
+.adress .mail-icon {padding-left:35px; background:url(img/mail-i.png) left center no-repeat;}
 
 .photo-stream {position:relative;}
 .photo-stream .photo-col {position:relative; float:left; width:25%; margin-bottom:20px;}
@@ -223,7 +223,7 @@ p {font-size:12pt; line-height:140%; color:#333;}
 
 .dropdown-container {position: relative;  float: left; margin-top:-5px; margin-bottom:15px;}
 .dropdown-container .dropdown-trigger {position: relative; display: none; float: left; padding: 3px 25px 3px 10px; color:#fff; border-radius:12px;}
-.dropdown-container .dropdown-trigger i {display:block; position:absolute; right:10px; top:6px; width:12px; height:12px; background:url(../img/darr.png) center center no-repeat;}
+.dropdown-container .dropdown-trigger i {display:block; position:absolute; right:10px; top:6px; width:12px; height:12px; background:url(img/darr.png) center center no-repeat;}
 
 .cat-selector {position:relative; float:left;}
 .cat-selector span, .dropdown-container a{margin-right:10px; font-size:10pt; text-decoration:none;}
