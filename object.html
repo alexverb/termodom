@@ -5,9 +5,11 @@
 <title>Город Спутник</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="css/styles.css">
+
 <link rel="stylesheet" href="css/responsive.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
 <script src="js/modernizr.custom.17475.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script src="js/jquerypp.custom.js"></script>
 <script src="js/jquery.elastislide.js"></script>
 
@@ -31,40 +33,7 @@
 		});
 	});
 </script>
-<script type="text/javascript">
-			
-// example how to integrate with a previewer
-$(document).ready(function() {
-                var current = 0,
-                        $preview = $( '#preview' ),
-                        $carouselEl = $( '#carousel' ),
-                        $carouselItems = $carouselEl.children(),
-                        carousel = $carouselEl.elastislide( {
-                                current : current,
-                                minItems : 2,
-                                onClick : function( el, pos, evt ) {
 
-                                        changeImage( el, pos );
-                                        evt.preventDefault();
-
-                                },
-                                onReady : function() {
-
-                                        changeImage( $carouselItems.eq( current ), current );
-
-                                }
-                        } );
-
-                function changeImage( el, pos ) {
-
-                        $preview.attr( 'src', el.data( 'preview' ) );
-                        $carouselItems.removeClass( 'current-img' );
-                        el.addClass( 'current-img' );
-                        carousel.setCurrent( pos );
-
-                }
-});
-</script>
 
 </head>
 
@@ -187,6 +156,39 @@ $(document).ready(function() {
         </div><!--/bottom-->
         
     </div><!--/page surround -->
+<script type="text/javascript">
+			
+// example how to integrate with a previewer
+//$(document).ready(function() {
+                var current = 0,
+                        $preview = $( '#preview' ),
+                        $carouselEl = $( '#carousel' ),
+                        $carouselItems = $carouselEl.children(),
+                        carousel = $carouselEl.elastislide( {
+                                current : current,
+                                minItems : 2,
+                                onClick : function( el, pos, evt ) {
 
+                                        changeImage( el, pos );
+                                        evt.preventDefault();
+
+                                },
+                                onReady : function() {
+
+                                        changeImage( $carouselItems.eq( current ), current );
+
+                                }
+                        } );
+
+                function changeImage( el, pos ) {
+
+                        $preview.attr( 'src', el.data( 'preview' ) );
+                        $carouselItems.removeClass( 'current-img' );
+                        el.addClass( 'current-img' );
+                        carousel.setCurrent( pos );
+
+                }
+//});
+</script>
 </body>
 </html>

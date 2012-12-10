@@ -114,16 +114,19 @@ p {font-size:12pt; line-height:140%; color:#333;}
 	.objects-inner .image {}
 	.objects-inner .image img {max-width:100%;border-radius:8px 8px 0 0; display:block; width: 100%;}
 	.objects-inner .small-gallery {position:relative; margin-bottom:5px; padding-bottom:5px;border-bottom:#ccc 1px solid;}
-                .elastislide-carousel {overflow: hidden; position: relative;}
-                .elastislide-wrapper {position: relative;margin: 0 auto;}
+                .elastislide-list {list-style-type: none; display: none;}
+                .no-js .elastislide-list {display: block;}                
+                .elastislide-wrapper {position: relative;margin: 0 auto; min-height: 54px;}
                 .elastislide-horizontal {padding: 0 30px;}
-                .elastislide-carousel ul {-webkit-backface-visibility: hidden;-webkit-transform: translateX(0px);-moz-transform: translateX(0px);-ms-transform: translateX(0px);-o-transform: translateX(0px);transform: translateX(0px);}
-                .elastislide-carousel ul li {margin: 0; -webkit-backface-visibility: hidden;}
-		.small-gallery .elastislide-list {display:block; padding: 0; margin: 0;white-space: nowrap; height: 54px;}
-		.small-gallery .elastislide-list li {display:inline-block; height: 100%; list-style: none; height:48px; margin-right:10px;}
-		.small-gallery a {display:block;}
-		.small-gallery .elastislide-list .current-img {border-color:#f93;}
-		.small-gallery a img {width:48px; height:auto; border:3px solid #999;-moz-border-radius:3px; -o-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+                .elastislide-carousel {overflow: hidden; position: relative;}
+                .elastislide-carousel ul {position: relative; display:block; list-style-type: none; padding: 0; margin: 0;-webkit-backface-visibility: hidden;-webkit-transform: translateX(0px);-moz-transform: translateX(0px);-ms-transform: translateX(0px);-o-transform: translateX(0px);transform: translateX(0px);}
+                .elastislide-horizontal ul {white-space: nowrap;}
+                .elastislide-carousel ul li { -webkit-backface-visibility: hidden; margin: 0 3px;}
+                .elastislide-horizontal ul li {display:inline-block; height: 100%; }
+		.small-gallery .elastislide-list {}
+		.small-gallery .elastislide-list li {}
+		.elastislide-carousel ul li a {display: inline-block;width: 100%;}
+		.elastislide-carousel ul li a img {display:block; width: 48px; height:auto; border:3px solid #999;-moz-border-radius:3px; -o-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
                 .small-gallery .elastislide-list .current-img img {border-color:#f93;}
                 .elastislide-wrapper nav span {position: absolute;background: #ddd url(img/nav.png) no-repeat 2px 2px;
                         width: 20px;height: 20px; border-radius: 50%;text-indent: -9000px; cursor: pointer; opacity: 0.8; }
