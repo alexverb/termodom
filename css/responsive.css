@@ -6,11 +6,12 @@
 @media only screen and (max-width: 300px) { 
 	.top-tel p span {display:none;}
         .contacts .contacts-container h2{font-size: 14pt;}
+        .object .check-plan {font-size: 10pt;}
 }
 
 @media only screen and (max-width: 320px) { 
-	.objects-inner .small-gallery {display:none;}
-        .contacts .contacts-container h2{font-size: 14pt;}
+	.contacts .contacts-container h2{font-size: 14pt;}
+        .object .check-plan {font-size: 10pt;}
 }
 
 

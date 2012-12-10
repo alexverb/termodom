@@ -7,8 +7,13 @@
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/responsive.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/modernizr.custom.17475.js"></script>
+<script src="js/jquerypp.custom.js"></script>
+<script src="js/jquery.elastislide.js"></script>
+
+
 <script>
-	$(function() {
+	$(document).ready(function() {
 		var pull 		= $('#pull');
 			menu 		= $('.menu-items');
 			menuHeight	= menu.height();
@@ -25,6 +30,40 @@
 			}
 		});
 	});
+</script>
+<script type="text/javascript">
+			
+// example how to integrate with a previewer
+$(document).ready(function() {
+                var current = 0,
+                        $preview = $( '#preview' ),
+                        $carouselEl = $( '#carousel' ),
+                        $carouselItems = $carouselEl.children(),
+                        carousel = $carouselEl.elastislide( {
+                                current : current,
+                                minItems : 2,
+                                onClick : function( el, pos, evt ) {
+
+                                        changeImage( el, pos );
+                                        evt.preventDefault();
+
+                                },
+                                onReady : function() {
+
+                                        changeImage( $carouselItems.eq( current ), current );
+
+                                }
+                        } );
+
+                function changeImage( el, pos ) {
+
+                        $preview.attr( 'src', el.data( 'preview' ) );
+                        $carouselItems.removeClass( 'current-img' );
+                        el.addClass( 'current-img' );
+                        carousel.setCurrent( pos );
+
+                }
+});
 </script>
 
 </head>
@@ -75,13 +114,21 @@
                         <div class="object-inside-block"><!--o-i-b-->
                            <div class="block"><!-- block-->
                               <div class="objects-inner">
-                                    <div class="object">
-                                        <div class="image"><a href="#" ><img src="css/img/obj6.jpg"></a></div>
+                                  <div class="object gallery">
+                                        <div class="image"><img id="preview" src="css/img/obj6.jpg"></div>
                                         <div class="description">
                                             <div class="small-gallery">
-                                                <a href="#" ><img src="css/img/obj-g-1.jpg"></a>
-                                                <a href="#" class="selected"><img src="css/img/obj-g-2.jpg"></a>
-                                                <a href="#"><img src="css/img/obj-g-3.jpg"></a>
+                                                <ul id="carousel" class="elastislide-list">
+                                                    <li data-preview="css/img/obj6.jpg" class="current-img"><a href="#"><img src="css/img/obj-g-1.jpg" alt="image04" /></a></li>
+                                                    <li data-preview="css/img/obj5.jpg"><a href="#"><img src="css/img/obj-g-2.jpg" alt="image05" /></a></li>
+                                                    <li data-preview="css/img/obj4.jpg"><a href="#"><img src="css/img/obj-g-3.jpg" alt="image06" /></a></li>
+                                                    <li data-preview="css/img/obj6.jpg"><a href="#"><img src="css/img/obj-g-1.jpg" alt="image04" /></a></li>
+                                                    <li data-preview="css/img/obj5.jpg"><a href="#"><img src="css/img/obj-g-2.jpg" alt="image05" /></a></li>
+                                                    <li data-preview="css/img/obj4.jpg"><a href="#"><img src="css/img/obj-g-3.jpg" alt="image06" /></a></li>
+                                                    <li data-preview="css/img/obj6.jpg"><a href="#"><img src="css/img/obj-g-1.jpg" alt="image04" /></a></li>
+                                                    <li data-preview="css/img/obj5.jpg"><a href="#"><img src="css/img/obj-g-2.jpg" alt="image05" /></a></li>
+                                                    <li data-preview="css/img/obj4.jpg"><a href="#"><img src="css/img/obj-g-3.jpg" alt="image06" /></a></li>
+                                                </ul>   
                                                 <div class="clear"></div>
                                             </div>
                                             <div class="progressbar">
