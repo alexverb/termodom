@@ -65,7 +65,8 @@
 .dvs-image + .dvs-image {margin: 15px auto 0 auto;}
 .dvs-image {display:block; margin:auto;}
 .object-inside-block {float:none; width: 400px; margin: auto;}
-
+.branding {float:none; margin-right:0; text-align:center;}
+.copyright {float:none; margin-left:0; text-align:center;}
 .map-block, .contacts {float: none; width: 100%;}
 .contacts .contacts-container {margin: 0;}
 .contacts .contacts-container h2{font-size: 16pt;}
@@ -92,6 +93,8 @@
 .dvs-image + .dvs-image {margin: 15px auto 0 auto;}
 .dvs-image {display:block; margin:auto;}
 .object-inside-block {float:none; width: 400px; margin: auto;}
+.branding {float:none; margin-right:0; text-align:center;}
+.copyright {float:none; margin-left:0; text-align:center;}
 
 .map-block, .contacts {float: none; width: 100%;}
 .contacts .contacts-container {margin: 0;}

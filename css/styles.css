@@ -17,7 +17,7 @@ p {font-size:12pt; line-height:140%; color:#333;}
 
 #page-surround {position:relative; }
 .container {position:relative; width:960px; margin:0 auto; }
-.block {position:relative; margin-bottom:15px;}
+.block {position:relative; margin-bottom:15px; clear: both;}
 #header {position:relative;}
 #header .top {position:relative;}
 	#logo {position:relative; padding:25px 10px; float:left;}
@@ -75,7 +75,9 @@ p {font-size:12pt; line-height:140%; color:#333;}
 
 #bottom {position:relative; margin:25px 0;}
 #bottom .container {border-top:1px dashed #999; padding-top:25px; background:url(img/map-shadow.png) center top no-repeat; background-size:contain;}
-	
+    .bottom-adress {position: relative; }
+    .small {font-size: 10pt; padding: 0; margin:5px 0;}
+
 	.icon {display:block; width:38px; height:38px; position:absolute; left:-42px; top:0;}
 		.sputnik {background:url(img/sputnik-image.png) center center no-repeat;}
 		.news-ico {background:url(img/news-image.png) center center no-repeat;}
@@ -258,8 +260,8 @@ p {font-size:12pt; line-height:140%; color:#333;}
 .news-block-full .article p.date {margin:0; color:#999;}
 .news-block-full .article .article-image {float:left; margin-right:15px;}
 
-.map-block {position: relative; width: 50%; float: left;}
+/*.map-block {position: relative; width: 50%; float: left;}
 .contacts {position: relative; width: 50%; float: left;}
 .contacts .contacts-container {margin-left: 10px;}
 .map-block .map-container {position: relative; padding:3px; background-color:#fff; border-radius:3px; box-shadow:0 0 30px -10px #ccc;}
-.map-block .map-container img {display: block;}/*Temporary*/
+.map-block .map-container img {display: block;}*//*Temporary*/

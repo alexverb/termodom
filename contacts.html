@@ -69,21 +69,21 @@
     <!--header bottom--> 
   </div>
   <!--/header -->
-  
+  <div id="map"><!--map-->
+            <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+            <div id="ymaps-map-id_135522442902168312991" style="width: 100%; height: 380px;"></div>
+            <script type="text/javascript">function fid_135522442902168312991(ymaps) {var map = new ymaps.Map("ymaps-map-id_135522442902168312991", {center: [45.023811852050784, 53.15533692034157], zoom: 11, type: "yandex#map"});map.controls.add("zoomControl").add("mapTools").add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));map.geoObjects.add(new ymaps.Placemark([45.0510030183511, 53.130971253299705], {balloonContent: ""}, {preset: "twirl#lightblueDotIcon"}));};</script>
+            <script type="text/javascript" src="http://api-maps.yandex.ru/2.0-stable/?lang=ru-RU&coordorder=longlat&load=package.full&wizard=constructor&onload=fid_135522442902168312991"></script>
+            <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+  </div><!--/map-->
   <div id="content"><!--content-->
     <div class="container">
       <div class="left-block w940"><!-- lb -->
         <div class="block"><!-- block-->
-            <div class="map-block">
-                <div class="map-container">
-                    <img src="css/img/map-in-contacts.png" width="100%" height="auto" />
-                </div>
-            </div>
             <div class="contacts">
                 <div class="contacts-container">
                     <h2>мрн. Терновка, г. Спутник, за магазином METRO C&C ул. Радужная д. 1, 2 этаж</h2>
                     <h3>Тел.: 8(8412) 00-00-00</h3>
-                    <p>Слово, не учитывая количества слогов, стоящих между ударениями, стабильно. </p>
                 </div>
             </div>
             <div class="clear"></div>
