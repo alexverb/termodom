@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Город Спутник</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+	$(function() {
+		var pull 		= $('#pull');
+			menu 		= $('.menu-items');
+			menuHeight	= menu.height();
+
+		$(pull).on('click', function(e) {
+			e.preventDefault();
+			menu.slideToggle();
+		});
+
+		$(window).resize(function(){
+			var w = $(window).width();
+			if(w > 320 && menu.is(':hidden')) {
+				menu.removeAttr('style');
+			}
+		});
+	});
+</script>
+
+</head>
+
+<body>
+<div id="page-surround"><!--page surround -->
+  <div id="header"><!--header -->
+    <div class="top"><!--header top-->
+      <div class="container">
+        <div id="logo"><img src="css/img/logo.png" /></div>
+                    <div class="top-tel">
+                    	<p><strong>(841-2) 00-00-00</strong><span> (телефон)</span></p><p><strong>(841-2) 00-00-01</strong><span> (факс)</span></p>
+                    </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <!--/header top-->
+    <div class="menu"><!--header bottom-->
+      <div class="container">
+        <ul class="menu-items">
+          <li class="active">О Спутнике</li>
+          <li><a href="#">Объекты</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Фотогалерея</a></li>
+          <li><a href="#">Контакты</a></li>
+          <div class="clear"></div>
+        </ul>
+        <a href="#" id="pull"><span>Меню</span></a>
+
+        <div id="search">
+          <div class="search-button">
+            <input type="button" />
+          </div>
+          <div class="search-field">
+            <input type="text" value="поиск..."/>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <!--header bottom--> 
+  </div>
+  <!--/header -->
+  
+  <div id="content"><!--content-->
+    <div class="container">
+      <div class="left-block w940"><!-- lb -->
+
+        <div class="search-page">
+                <form action="" method="get">
+                    <input type="hidden" name="tags" value="" />
+                    <input type="hidden" name="how" value="r" />
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td style="width: 100%;"><input class="search-query" type="text" name="q" value="14" /></td>
+
+                                <td><input class="search-button" type="submit" value="Найти" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <noindex>
+                        <div class="search-advanced">
+                                <div class="search-advanced-result">
+                                    <div class="search-result">Найдено: 2</div>
+                                </div>					
+                        </div>					
+                    </noindex>
+                </form>
+
+
+                <div class="search-result">
+                    <div class="search-item">
+                        <h2><a href="/object/39/?sphrase_id=6">Жилой дом №14</a></h2>
+                        <div class="search-preview">Продаются квартиры в жилом доме под строительным № 14, в городе Спутнике
+Участок под строительство 10-ти этажного жилого дома №14 расположен в с.Засечное Пензенского района Пензенской области в районе микрорайона №5 «Терновка» в планировочной зоне Ж-3.
+
+С северной стороны примыкает к участку магазина «МЭТРО КЭШ ЭНД КЭРРИ», с западной стороны примыкает к участку «Петровский квартал», с восточной стороны ограничен ж/д 16 (стр.), с южной стороны примыкает к участку 10-ти этажного ж/д.
+
+Для строительства...</div>
+                    </div>
+                    <div class="search-item">
+                        <h2><a href="/object/77/?sphrase_id=6">Жилой дом №16</a></h2>
+                        <div class="search-preview">Участок под строительство 10-ти этажного жилого дома №16 расположен в с.Засечное Пензенского района Пензенской области в районе микрорайона №5 &laquo;Терновка&raquo; в планировочной зоне Ж-3.
+С северной стороны примыкает к участку магазина &laquo;МЭТРО КЭШ ЭНД КЭРРИ&raquo;, с западной стороны примыкает к жилому дому 14 (стр), с восточной стороны ограничен ж/д 24 (стр.), с южной стороны примыкает к участку 15-ти этажного ж/д.
+Для строительства жилого дома применялись современные и долговечные материалы...</div>
+                    </div>
+                </div>
+        </div>
+     </div>
+      <!-- /lb -->
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!--/content-->
+  
+        <div id="bottom"><!--bottom-->
+        	<div class="container">
+                <div class="copyright">© 2012 Строительный холдинг «Термодом»</div>
+                <div class="branding"><a href="http://divasoft.ru" target="_blank"><img src="css/img/branding.png" width="76" height="18"></a></div>
+                <div class="clear"></div>            
+          </div>
+        </div><!--/bottom-->
+  
+</div>
+<!--/page surround -->
+
+</body>
+</html>
