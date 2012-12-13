@@ -38,6 +38,7 @@ p {font-size:12pt; line-height:140%; color:#333;}
 	.menu ul.menu-items li a {text-decoration:none; border-bottom:1px solid #61a3b6;}
 	.menu ul.menu-items li.active {margin:0 7px; padding:0 8px; border-radius:12px;}
 	.menu ul.menu-items li.active a {border-bottom: none; color: #fff;}
+        .menu ul.menu-items li a:hover, .menu ul.menu-items li.active:hover {opacity: 0.9;}
 	
 	#pull {display:none; margin: 0 15px; clear:both; background:url(img/nav-icon.png) right center no-repeat; text-decoration:none;}
 	#pull span {border-bottom:1px dashed #046e8b;}
