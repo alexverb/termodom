@@ -63,6 +63,31 @@ p {font-size:12pt; line-height:140%; color:#333;}
 #map {position:relative; /*overflow:hidden;*/ height:380px; background:url(img/map.png) center top no-repeat; border-bottom:1px solid #aaa;}
 .contacts-map {position:relative; border-bottom:1px solid #aaa;}
 #map:after {}
+.showcase {position: relative; z-index: 10;}
+    .showcase-block {position: relative; border-radius: 8px;}
+    .showcase-block img {display: block; border-radius: 8px; width: 100%;}
+    .padding-bottom {padding-bottom: 25px;}
+    .padding-top {padding-top: 25px;}
+    .margin-bottom {margin-bottom: 25px;}
+    .bg1 {background: url('img/bg/bg1.png');}
+    .inset-shadow {box-shadow: 0 0 5px 0 rgba(0,0,0,0.3) inset;}
+.carousel {  position: relative;  margin-bottom: 20px;  line-height: 1;}
+.carousel-inner {  overflow: hidden;  width: 100%;  position: relative;}
+.carousel-inner > .item {  display: none;  position: relative;  -webkit-transition: 0.6s ease-in-out left;  -moz-transition: 0.6s ease-in-out left;
+  -o-transition: 0.6s ease-in-out left;  transition: 0.6s ease-in-out left;}
+.carousel-inner > .item > img {  display: block;  line-height: 1;}
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {  display: block;}
+.carousel-inner > .active {  left: 0;}
+.carousel-inner > .next, .carousel-inner > .prev {  position: absolute; top: 0;  width: 100%;}
+.carousel-inner > .next {  left: 100%;}
+.carousel-inner > .prev {  left: -100%;}
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {  left: 0;}
+.carousel-inner > .active.left {  left: -100%;}
+.carousel-inner > .active.right {  left: 100%;}
+
 #content {position:relative;padding-top:25px; background:url(img/map-shadow.png) center top no-repeat;}
 #content .left-block {position:relative;float:left;  margin:0 10px;}
 #content .right-block {position:relative;float:right; margin:0 10px;}
@@ -70,6 +95,7 @@ p {font-size:12pt; line-height:140%; color:#333;}
 	.w260 {width:260px;}
 	.w360 {width:360px;}
 	.w540 {width:540px;}
+	.w450 {width:450px;}
 	.w300 {width:300px;}
 	.w600 {width:600px;}
     .w940 {width:940px;}
@@ -89,13 +115,13 @@ p {font-size:12pt; line-height:140%; color:#333;}
 .objects .item {position:relative; float:left; margin-bottom:25px;}
 .col3 .item {width:33%;}
 .col4 .item {width:25%;}
-.objects .item .object{position:relative; width:95%; background-color:#fff;}
+.objects .item .object{position:relative; width:95%; border-radius: 8px; box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);}
 
 .object-inside-block {width:400px; position: relative; float: left; margin-right: 15px; z-index: 3; }
 .objects-inner {position:relative;}
 .objects-inner .object{position:relative; margin:auto; background-color:#fff;}
 
-	.object:after, .object:before {
+	.object:after, .object:before, .showcase-block:after, .showcase-block:before {
 					 		   -moz-transform: rotate(-5deg);
 							   -webkit-transform: rotate(-5deg);
 							   -o-transform: rotate(-5deg);
@@ -111,8 +137,8 @@ p {font-size:12pt; line-height:140%; color:#333;}
 								width: 50%;
 								z-index: -1;
 								}
-	.object:after {-moz-transform: rotate(5deg);-webkit-transform: rotate(5deg);-o-transform: rotate(5deg);transform: rotate(5deg);left: auto;right: 10px;}
- 	.object .description, .photo .description {border-width:0 1px 1px 1px; border-color:#ccc; border-style:solid; padding:10px; border-radius:0 0 8px 8px;}
+	.object:after, .showcase-block:after {-moz-transform: rotate(5deg);-webkit-transform: rotate(5deg);-o-transform: rotate(5deg);transform: rotate(5deg);left: auto;right: 10px;}
+ 	.object .description, .photo .description {border-width:0 1px 1px 1px; border-color:#ccc; border-style:solid; padding:10px; border-radius:0 0 8px 8px; background: #fff;}
 	.object .image {/*height:160px;*/ border-radius:8px 8px 0 0; background-size:contain !important;}
 	.object .image a {display:block;}
 	.object .image img {max-width:100%;border-radius:8px 8px 0 0; display:block;}
@@ -189,6 +215,8 @@ p {font-size:12pt; line-height:140%; color:#333;}
 	.object .progressbar .bar-line{height:15px; background:#ccc; border-radius:7px; position:relative;}
 	.object .progressbar .bar-line span{display:block; position:absolute; left:10px; top:0; line-height:14px; font-size:12px; color:#fff;}
 	.object .progressbar .bar-line .middle, .object .progressbar .bar-line .high, .object .progressbar .bar-line .low {height:100%; border-radius:7px;}
+        
+        .bg1 .object .description, .bg1 .photo .description {border-color: #fff;}
 
 .news-list {position:relative;}
 .news-list ul {position:relative; padding:0; margin:0;}
