@@ -73,22 +73,6 @@ p {font-size:12pt; line-height:140%; color:#333;}
     .bg1 {background: url('img/bg/bg1.png');}
     .inset-shadow {box-shadow: 0 0 5px 0 rgba(0,0,0,0.3) inset;}
     .shadow {background:url(img/map-shadow.png) center top no-repeat;}
-.carousel {  position: relative;  line-height: 1;}
-.carousel-inner {  overflow: hidden;  width: 100%;  position: relative; border-radius: 8px;}
-.carousel-inner > .item {  display: none;  position: relative;  -webkit-transition: 0.6s ease-in-out left;  -moz-transition: 0.6s ease-in-out left;
-  -o-transition: 0.6s ease-in-out left;  transition: 0.6s ease-in-out left;}
-.carousel-inner > .item > img {  display: block;  line-height: 1;} 
-.carousel-inner > .active,
-.carousel-inner > .next,
-.carousel-inner > .prev {  display: block;}
-.carousel-inner > .active {  left: 0;}
-.carousel-inner > .next, .carousel-inner > .prev {  position: absolute; top: 0;  width: 100%;}
-.carousel-inner > .next {  left: 100%;}
-.carousel-inner > .prev {  left: -100%;}
-.carousel-inner > .next.left,
-.carousel-inner > .prev.right {  left: 0;}
-.carousel-inner > .active.left {  left: -100%;}
-.carousel-inner > .active.right {  left: 100%;}
 
 #content {position:relative;}
 #content .left-block {position:relative;float:left;  margin:0 10px;}
@@ -118,7 +102,7 @@ p {font-size:12pt; line-height:140%; color:#333;}
 .col3 .item {width:33%;}
 .col4 .item {width:25%;}
 .objects .item .object{position:relative; width:95%; border-radius: 8px; box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);}
-
+    .flexslider .object {margin: 0 5px; position: relative;}
 .object-inside-block {width:400px; position: relative; float: left; margin-right: 15px; z-index: 3; }
 .objects-inner {position:relative;}
 .objects-inner .object{position:relative; margin:auto; background-color:#fff;}
