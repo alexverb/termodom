@@ -242,16 +242,16 @@ p {font-size:12pt; line-height:140%; color:#333;}
 .photo-stream .photo-col .photo img {max-width:100%; display:block; border-radius:8px 8px 0 0;}
 .photo-stream .photo-col .photo:after, .photo-stream .photo-col .photo:before {
 						   -moz-transform: rotate(-5deg);
-							background: none repeat scroll 0 0 #777777;
-							bottom: 18px;
-							box-shadow: 0 15px 10px #777777;
-							content: "";
-							left: 10px;
-							max-width: 220px;
-							position: absolute;
-							top: 80%;
-							width: 50%;
-							z-index: -1;
+                                                    background: none repeat scroll 0 0 #777777;
+                                                    bottom: 18px;
+                                                    box-shadow: 0 15px 10px #777777;
+                                                    content: "";
+                                                    left: 10px;
+                                                    max-width: 220px;
+                                                    position: absolute;
+                                                    top: 80%;
+                                                    width: 50%;
+                                                    z-index: -1;
 							}
 .photo-stream .photo-col .photo:after {-moz-transform: rotate(5deg);left: auto;right: 10px;}
 .photo-stream .photo-col .photo .name {}
@@ -287,6 +287,33 @@ p {font-size:12pt; line-height:140%; color:#333;}
 .search-result .search-item {position: relative; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px dashed #ccc;}
 .search-result .search-item:last-child {border:none;}
 .search-advanced-result .search-result {color: #888;}
-div.search-page input.search-query {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box;-moz-border-radius: 13px 0 0 13px;-webkit-border-radius: 13px 0 0 13px;-o-border-radius: 13px 0 0 13px;border-radius: 13px 0 0 13px;color: #333333;font-size: 14px;padding: 4px 10px;
-width: 100%; border-style: solid; border-width: 1px 0 1px 1px; border-color: #DBDBDB transparent #ECECEC #DBDBDB; margin: 0;}
+div.search-page input.search-query {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box;-moz-border-radius: 13px 0 0 13px;-webkit-border-radius: 13px 0 0 13px;-o-border-radius: 13px 0 0 13px;border-radius: 13px 0 0 13px;color: #333333;font-size: 14px;padding: 4px 10px; width: 100%; border-style: solid; border-width: 1px 0 1px 1px; border-color: #DBDBDB transparent #ECECEC #DBDBDB; margin: 0;}
 div.search-page input.search-button {display:block; height: 16px; border: medium none;-moz-border-radius: 0 13px 13px 0;-webkit-border-radius: 0 13px 13px 0;-o-border-radius: 0 13px 13px 0;border-radius: 0 13px 13px 0;color: #FFFFFF;font-size: 14px;margin: 0;padding: 5px 8px; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; -o-box-sizing: content-box; box-sizing: content-box;}
+
+
+/* Tabs */
+.tab-content {overflow: auto;}
+.tab-content .tab-pane {display: none;}
+  .tab-content .active {display: block;}
+  
+.nav-tabs {position: relative; display: block; border-bottom: 1px solid #ccc; padding: 0; margin: 0;}
+.nav-tabs li {
+            position: relative;
+            list-style: none;
+            float: left; border-radius: 6px 6px 0 0;
+            border-width: 1px;  border-color: transparent;
+            border-style: solid; margin-bottom: -1px;
+            margin-left: 5px;
+            }
+.nav-tabs li a {text-decoration: none; padding: 0 15px; line-height: 34px;}
+.nav-tabs li.active {  
+                    border-color:#ccc #ccc transparent #ccc;
+                    background: #ffffff; /* Old browsers */
+                    background: -moz-linear-gradient(top,  #ffffff 65%, #fafafa 100%); /* FF3.6+ */
+                    background: -webkit-gradient(linear, left top, left bottom, color-stop(65%,#ffffff), color-stop(100%,#fafafa)); /* Chrome,Safari4+ */
+                    background: -webkit-linear-gradient(top,  #ffffff 65%,#fafafa 100%); /* Chrome10+,Safari5.1+ */
+                    background: -o-linear-gradient(top,  #ffffff 65%,#fafafa 100%); /* Opera 11.10+ */
+                    background: -ms-linear-gradient(top,  #ffffff 65%,#fafafa 100%); /* IE10+ */
+                    background: linear-gradient(to bottom,  #ffffff 65%,#fafafa 100%); /* W3C */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fafafa',GradientType=0 ); /* IE6-9 */
+                    }

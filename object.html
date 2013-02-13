@@ -12,6 +12,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script src="js/jquerypp.custom.js"></script>
 <script src="js/jquery.elastislide.js"></script>
+<script src="js/bootstrap-tab.js"></script>
 
 
 <script>
@@ -31,6 +32,11 @@
 				menu.removeAttr('style');
 			}
 		});
+                $('#tabs a').click(function (e) {
+                    e.preventDefault();
+                    $(this).tab('show');
+                });
+                $('#tabs a[href="#description"]').tab('show');
 	});
 </script>
 
@@ -41,9 +47,9 @@
 
     <div id="page-surround"><!--page surround -->
     	<div id="header"><!--header -->
-        	<div class="top"><!--header top-->
+            <div class="top"><!--header top-->
             	<div class="container">
-					<div id="logo"><img src="css/img/logo.png" /></div>
+                    <div id="logo"><img src="css/img/logo.png" /></div>
                     <div class="top-tel">
                     	<p><strong>(841-2) 00-00-00</strong><span> (телефон)</span></p><p><strong>(841-2) 00-00-01</strong><span> (факс)</span></p>
                     </div>
@@ -52,20 +58,17 @@
             </div><!--/header top-->
             <div class="menu"><!--header bottom-->
             	<div class="container">
-                	<ul class="menu-items">
-                    	<li><a href="#">О Спутнике</a></li>
-                        <li><a href="#">Объекты</a></li>
+                    <ul class="menu-items">
+                    	<li><a href="#">О компании</a></li>
+                        <li><a href="#">Продукция</a></li>
                         <li><a href="#">Новости</a></li>
-                        <li><a href="#">Фотогалерея</a></li>
+                        <li><a href="#">Объекты</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Вопрос-ответ</a></li>
                         <li><a href="#">Контакты</a></li>
                         <div class="clear"></div>
                     </ul>
                     <a href="#" id="pull"><span>Меню</span></a>
-                    <div id="search">
-                    	<div class="search-button"><input type="button" /></div>
-                        <div class="search-field"><input type="text" value="поиск..."/></div>
-                        <div class="clear"></div>
-                    </div>
                     <div class="clear"></div>
                 </div>            
             </div><!--header bottom-->
@@ -77,69 +80,86 @@
             	
             	<div class="left-block w940"><!-- lb -->
                         
-                	<div class="block"><!-- block-->
+                    <div class="block"><!-- block-->
                         <div class="breadcrumbs"><a href="#"><img src="css/img/home-ico.png" width="16" height="16"></a> &gt; <a href="#">Объекты</a> &gt; <a href="#">Жилые</a></div>
-                    	<h2>Жилой дом №24 (Спутник)</h2>
-                        
-                        <div class="object-inside-block"><!--o-i-b-->
-                           <div class="block"><!-- block-->
-                              <div class="objects-inner">
-                                  <div class="object gallery">
-                                        <div class="image"><img id="preview" src="css/img/obj6.jpg"></div>
-                                        <div class="description">
-                                            <div class="small-gallery">
-                                                <ul id="carousel" class="elastislide-list">
-                                                    <li data-preview="css/img/obj6.jpg" class="current-img"><a href="#"><img src="css/img/obj-g-1.jpg" alt="image04" /></a></li>
-                                                    <li data-preview="css/img/obj5.jpg"><a href="#"><img src="css/img/obj-g-2.jpg" alt="image05" /></a></li>
-                                                    <li data-preview="css/img/obj4.jpg"><a href="#"><img src="css/img/obj-g-3.jpg" alt="image06" /></a></li>
-                                                    <li data-preview="css/img/obj6.jpg"><a href="#"><img src="css/img/obj-g-1.jpg" alt="image04" /></a></li>
-                                                    <li data-preview="css/img/obj5.jpg"><a href="#"><img src="css/img/obj-g-2.jpg" alt="image05" /></a></li>
-                                                    <li data-preview="css/img/obj4.jpg"><a href="#"><img src="css/img/obj-g-3.jpg" alt="image06" /></a></li>
-                                                    <li data-preview="css/img/obj6.jpg"><a href="#"><img src="css/img/obj-g-1.jpg" alt="image04" /></a></li>
-                                                    <li data-preview="css/img/obj5.jpg"><a href="#"><img src="css/img/obj-g-2.jpg" alt="image05" /></a></li>
-                                                    <li data-preview="css/img/obj4.jpg"><a href="#"><img src="css/img/obj-g-3.jpg" alt="image06" /></a></li>
-                                                </ul>   
-                                                <div class="clear"></div>
-                                            </div>
-                                            <div class="progressbar">
-                                                <div class="bar-line">
-                                                    <div style="width:65%;" class="middle"></div>
-                                                    <span>Продано: 65%</span>
+                    	<h2>Жилой дом №24 (Спутник)</h2>                        
+                        <ul class="nav-tabs" id="tabs">
+                            <li><a href="#planning" data-toggle="tab">Планировка</a></li>
+                            <li><a href="#description" data-toggle="tab">Описание</a></li>
+                            <li><a href="#declarations" data-toggle="tab">Проектные декларации</a></li>
+                            <li><a href="#location" data-toggle="tab">Местоположение</a></li>
+                            <div class="clear"></div>
+                        </ul>
+                        <div class="tab-content"><!-- tab content -->
+                            <div class="tab-pane" id="planning"><!-- tab-pane -->
+                                <div class="object-inside-block"><!--o-i-b-->
+                                   <div class="block"><!-- block-->
+                                      <div class="objects-inner">
+                                          <div class="object gallery">
+                                                <div class="image"><img id="preview" src="css/img/obj6.jpg"></div>
+                                                <div class="description">
+                                                    <div class="small-gallery">
+                                                        <ul id="carousel" class="elastislide-list">
+                                                            <li data-preview="css/img/obj6.jpg" class="current-img">
+                                                                <a href="#"><img src="css/img/obj-g-1.jpg" alt="image04" /></a>
+                                                            </li>
+                                                            <li data-preview="css/img/obj5.jpg">
+                                                                <a href="#"><img src="css/img/obj-g-2.jpg" alt="image05" /></a>
+                                                            </li>
+                                                            <li data-preview="css/img/obj4.jpg">
+                                                                <a href="#"><img src="css/img/obj-g-3.jpg" alt="image06" /></a>
+                                                            </li>
+                                                            <li data-preview="css/img/obj6.jpg">
+                                                                <a href="#"><img src="css/img/obj-g-1.jpg" alt="image04" /></a>
+                                                            </li>
+                                                            <li data-preview="css/img/obj5.jpg">
+                                                                <a href="#"><img src="css/img/obj-g-2.jpg" alt="image05" /></a>
+                                                            </li>
+                                                            <li data-preview="css/img/obj4.jpg">
+                                                                <a href="#"><img src="css/img/obj-g-3.jpg" alt="image06" /></a>
+                                                            </li>
+                                                        </ul>   
+                                                        <div class="clear"></div>
+                                                    </div>
+                                                    <div class="progressbar">
+                                                        <div class="bar-line">
+                                                            <div style="width:65%;" class="middle"></div>
+                                                            <span>Продано: 65%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="status">
+                                                        <span class="completed"><i></i>Построен</span>                                                
+                                                        <div class="clear"></div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="status">
-                                                <span class="completed"><i></i>Построен</span>                                                
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                               </div>  
-                            </div><!-- /block-->
-                        </div><!--/o-i-b-->
+                                       </div>  
+                                    </div><!-- /block-->
+                                </div><!--/o-i-b-->                        
+                                <p>Участок под строительство 10-ти этажного жилого дома №14 расположен в с.Засечное Пензенского района Пензенской области в районе микрорайона №5 «Терновка» в планировочной зоне Ж-3.</p>
+                                <p>С северной стороны примыкает к участку магазина «МЭТРО КЭШ ЭНД КЭРРИ», с западной стороны примыкает к участку «Петровский квартал», с восточной стороны ограничен ж/д 16 (стр.), с южной стороны примыкает к участку 10-ти этажного ж/д.</p>
+                                <p>Для строительства жилого дома применялись современные и долговечные материалы. Дом состоит из 2-х блок - секций. Пластика фасада решена разнообразием лоджий и балконов. Уникальная для Пензенской области система отделки фасада создает хорошую теплоизоляцию.</p>
+                                <p>В доме предусмотрены однокомнатные квартиры, квартиры студии и двухкомнатные квартиры. На жилых этажах размещены однокомнатные квартиры площадью от 27,9 до 41,0 кв.м., двухкомнатные квартиры площадью от 49,6 до 56,7 кв.м.</p>
+                            </div><!-- /tab-pane -->
+                             
+                            <div class="tab-pane active" id="description"><!-- tab-pane -->                        
+                                <p>Участок под строительство 10-ти этажного жилого дома №14 расположен в с.Засечное Пензенского района Пензенской области в районе микрорайона №5 «Терновка» в планировочной зоне Ж-3.</p>
+                                <p>С северной стороны примыкает к участку магазина «МЭТРО КЭШ ЭНД КЭРРИ», с западной стороны примыкает к участку «Петровский квартал», с восточной стороны ограничен ж/д 16 (стр.), с южной стороны примыкает к участку 10-ти этажного ж/д.</p>
+                                <p>Для строительства жилого дома применялись современные и долговечные материалы. Дом состоит из 2-х блок - секций. Пластика фасада решена разнообразием лоджий и балконов. Уникальная для Пензенской области система отделки фасада создает хорошую теплоизоляцию.</p>
+                                <p>В доме предусмотрены однокомнатные квартиры, квартиры студии и двухкомнатные квартиры. На жилых этажах размещены однокомнатные квартиры площадью от 27,9 до 41,0 кв.м., двухкомнатные квартиры площадью от 49,6 до 56,7 кв.м.</p>
+                            </div><!-- /tab-pane -->
+
+                            <div class="tab-pane" id="declarations"><!-- tab-pane -->                        
+                                <p>Участок под строительство 10-ти этажного жилого дома №14 расположен в с.Засечное Пензенского района Пензенской области в районе микрорайона №5 «Терновка» в планировочной зоне Ж-3.</p>
+                            </div><!-- /tab-pane -->
+
+                            <div class="tab-pane" id="location"><!-- tab-pane -->                        
+                                <p>Участок под строительство 10-ти этажного жилого дома №14 расположен в с.Засечное Пензенского района Пензенской области в районе микрорайона №5 «Терновка» в планировочной зоне Ж-3.</p>
+                                <p>С северной стороны примыкает к участку магазина «МЭТРО КЭШ ЭНД КЭРРИ», с западной стороны примыкает к участку «Петровский квартал», с восточной стороны ограничен ж/д 16 (стр.), с южной стороны примыкает к участку 10-ти этажного ж/д.</p>
+                            </div><!-- /tab-pane -->
+                        </div><!-- /tab content -->                
                         
-                        <p>Участок под строительство 10-ти этажного жилого дома №14 расположен в с.Засечное Пензенского района Пензенской области в районе микрорайона №5 «Терновка» в планировочной зоне Ж-3.</p>
-                        
-                        <p>С северной стороны примыкает к участку магазина «МЭТРО КЭШ ЭНД КЭРРИ», с западной стороны примыкает к участку «Петровский квартал», с восточной стороны ограничен ж/д 16 (стр.), с южной стороны примыкает к участку 10-ти этажного ж/д.</p>
-                        
-                        <p>Для строительства жилого дома применялись современные и долговечные материалы. Дом состоит из 2-х блок - секций. Пластика фасада решена разнообразием лоджий и балконов. Уникальная для Пензенской области система отделки фасада создает хорошую теплоизоляцию.</p>
-                        
-                        <p>В доме предусмотрены однокомнатные квартиры, квартиры студии и двухкомнатные квартиры. На жилых этажах размещены однокомнатные квартиры площадью от 27,9 до 41,0 кв.м., двухкомнатные квартиры площадью от 49,6 до 56,7 кв.м.</p>
-                        
-                        <p>В доме предусматривается: водяное отопление по независимой схеме через подогреватели, вытяжная вентиляция с естественным побуждением, горячее водоснабжение с циркуляционным трубопроводом через подогреватели, оборудование кухонь газовыми плитами, установленными оконными и балконными блоками из ПВХ.</p>
-                        
-                        <p>Город Спутник в микрорайоне Терновка, это уникальное, красивейшее место со своей инфраструктурой, хорошей экологией и тишиной для безмятежной жизни.</p>
-                        
-                        <p>Участок, на котором стоит новый дом, озеленяется, имеет детскую площадку, прогулочные дорожки. Проезд к дому обеспечен удобными дорожными развязками. Проектом предусмотрены площадки для отдыха детей дошкольного возраста, взрослого населения, хозяйственная площадка, стоянки для автомобилей. Рядом с домом находятся продовольственные магазины и медицинские учреждения.</p>
-                        
-                        <p>Жизнь в Спутнике разнообразна множеством различных мероприятий. В зимнее время: подледная рыбалка, катание на снегоходах, новогодняя ёлка, спартакиады. А летом жителей города ждет знаменитый пляж Лазурный берег, который располагается в 5 минутах ходьбы по чистой, благоустроенной пешеходной дорожке.  </p>
-                	</div><!-- /block-->
-                        <div class="block"><!-- block-->
-                            <img src="css/img/social-1.png" /><img src="css/img/social-2.png" /><img src="css/img/social-3.png" /><img src="css/img/social-4.png" />
-                        </div><!-- /block--> 
-                      <div class="block"><!-- block-->
-                        <h2>Комментарии</h2>
-                        <img src="css/img/comm.png" width="100%" height="auto">
-                      </div><!-- /block-->  
+                    </div><!-- /block-->
                 </div><!-- /lb -->
                 <div class="clear"></div>
             </div>
