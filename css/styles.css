@@ -177,7 +177,7 @@ p {font-size:12pt; line-height:140%; color:#333;}
 									filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e9adf', endColorstr='#206cca',GradientType=0 ); /* IE6-9 */
 									}
 	.object .status span.in-process i {display:block; position:absolute; left:10px; top:6px; width:12px; height:12px; background:url(img/in-process.png) center center no-repeat;}
-	.object .status span.planed, .object .progressbar .bar-line .middle, .cat-selector span, .menu ul.menu-items li.active {background: #ff9933; /* Old browsers */
+	.object .status span.planed, .object .progressbar .bar-line .middle, .cat-selector span, .menu ul.menu-items li.active, .sidebar-menu ul li.active > a {background: #ff9933; /* Old browsers */
 									background: -moz-linear-gradient(top,  #ff9933 0%, #ff7b00 100%); /* FF3.6+ */
 									background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff9933), color-stop(100%,#ff7b00)); /* Chrome,Safari4+ */
 									background: -webkit-linear-gradient(top,  #ff9933 0%,#ff7b00 100%); /* Chrome10+,Safari5.1+ */
@@ -236,7 +236,10 @@ p {font-size:12pt; line-height:140%; color:#333;}
 .adress .mail-icon {padding-left:35px; background:url(img/mail-i.png) left center no-repeat;}
 
 .photo-stream {position:relative;}
-.photo-stream .photo-col {position:relative; float:left; width:25%; margin-bottom:20px;}
+.photo-stream .photo-col {position:relative; float:left; margin-bottom:20px;}
+    .col2 .photo-col {width:50%; }
+    .col3 .photo-col {width:33%; }
+    .col4 .photo-col {width:25%; }
 .photo-stream .photo-col .photo {width:95%; border-radius:8px; position:relative;background:#fff;}
 .photo-stream .photo-col .photo a {display:block; position:relative;}
 .photo-stream .photo-col .photo img {max-width:100%; display:block; border-radius:8px 8px 0 0;}
@@ -296,18 +299,18 @@ div.search-page input.search-button {display:block; height: 16px; border: medium
 .tab-content .tab-pane {display: none;}
   .tab-content .active {display: block;}
   
-.nav-tabs {position: relative; display: block; border-bottom: 1px solid #ccc; padding: 0; margin: 0;}
+.nav-tabs {position: relative; display: block; border-bottom: 2px solid #f93; padding: 0; margin: 0;}
 .nav-tabs li {
             position: relative;
             list-style: none;
             float: left; border-radius: 6px 6px 0 0;
-            border-width: 1px;  border-color: transparent;
-            border-style: solid; margin-bottom: -1px;
+            border-width: 2px;  border-color: transparent;
+            border-style: solid; margin-bottom: -2px;
             margin-left: 5px;
             }
 .nav-tabs li a {text-decoration: none; padding: 0 15px; line-height: 34px;}
 .nav-tabs li.active {  
-                    border-color:#ccc #ccc transparent #ccc;
+                    border-color:#f93 #f93 transparent #f93;
                     background: #ffffff; /* Old browsers */
                     background: -moz-linear-gradient(top,  #ffffff 65%, #fafafa 100%); /* FF3.6+ */
                     background: -webkit-gradient(linear, left top, left bottom, color-stop(65%,#ffffff), color-stop(100%,#fafafa)); /* Chrome,Safari4+ */
@@ -317,3 +320,18 @@ div.search-page input.search-button {display:block; height: 16px; border: medium
                     background: linear-gradient(to bottom,  #ffffff 65%,#fafafa 100%); /* W3C */
                     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fafafa',GradientType=0 ); /* IE6-9 */
                     }
+.project-declarations {position: relative;}
+.document-list {position: relative;}
+.document-list ul {display: block; position: relative; padding: 0; margin: 10px 0 0 0;}
+.document-list ul li {list-style: none; display: block; margin-bottom: 10px; padding-left: 20px;}
+.project-declarations ul li {background: url('img/document_info.png') left center no-repeat;}
+
+.sidebar-menu {position: relative;}
+.sidebar-menu ul {display: block; position: relative; padding: 0; margin: 0;}
+.sidebar-menu ul li {display: block; list-style: none; margin-bottom: 5px;}
+.sidebar-menu ul li ul.submenu {padding: 10px 0 0 30px;}
+.sidebar-menu ul li ul.submenu li a {font-size:14px; }
+.sidebar-menu ul li a {padding:0 10px 0 0; border-radius: 12px;}
+.sidebar-menu ul li.active > a {text-decoration: none; color: #fff;}
+.sidebar-menu ul li a span {padding:0 15px; background: url('img/cat-nav.png') center center no-repeat;}
+.sidebar-menu ul li.active > a span {background: url('img/cat-nav-white.png') center center no-repeat;}

@@ -8,12 +8,12 @@
 
 <link rel="stylesheet" href="css/responsive.css">
 
-<script src="js/modernizr.custom.17475.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script src="js/jquerypp.custom.js"></script>
-<script src="js/jquery.elastislide.js"></script>
-<script src="js/bootstrap-tab.js"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/modernizr.custom.17475.js"></script>
+<script src="js/jquerypp.custom.js"></script>
+<script src="js/bootstrap-tab.js"></script>
+<script src="js/jquery.elastislide.js"></script>
 
 <script>
 	$(document).ready(function() {
@@ -62,7 +62,7 @@
                     	<li><a href="#">О компании</a></li>
                         <li><a href="#">Продукция</a></li>
                         <li><a href="#">Новости</a></li>
-                        <li><a href="#">Объекты</a></li>
+                        <li class="active"><a href="#">Объекты</a></li>
                         <li><a href="#">Вакансии</a></li>
                         <li><a href="#">Вопрос-ответ</a></li>
                         <li><a href="#">Контакты</a></li>
@@ -84,14 +84,14 @@
                         <div class="breadcrumbs"><a href="#"><img src="css/img/home-ico.png" width="16" height="16"></a> &gt; <a href="#">Объекты</a> &gt; <a href="#">Жилые</a></div>
                     	<h2>Жилой дом №24 (Спутник)</h2>                        
                         <ul class="nav-tabs" id="tabs">
-                            <li><a href="#planning" data-toggle="tab">Планировка</a></li>
                             <li><a href="#description" data-toggle="tab">Описание</a></li>
+                            <li><a href="#planning" data-toggle="tab">Планировка</a></li>
                             <li><a href="#declarations" data-toggle="tab">Проектные декларации</a></li>
                             <li><a href="#location" data-toggle="tab">Местоположение</a></li>
                             <div class="clear"></div>
                         </ul>
                         <div class="tab-content"><!-- tab content -->
-                            <div class="tab-pane" id="planning"><!-- tab-pane -->
+                            <div class="tab-pane active" id="description"><!-- tab-pane -->
                                 <div class="object-inside-block"><!--o-i-b-->
                                    <div class="block"><!-- block-->
                                       <div class="objects-inner">
@@ -142,15 +142,26 @@
                                 <p>В доме предусмотрены однокомнатные квартиры, квартиры студии и двухкомнатные квартиры. На жилых этажах размещены однокомнатные квартиры площадью от 27,9 до 41,0 кв.м., двухкомнатные квартиры площадью от 49,6 до 56,7 кв.м.</p>
                             </div><!-- /tab-pane -->
                              
-                            <div class="tab-pane active" id="description"><!-- tab-pane -->                        
+                            <div class="tab-pane" id="planning"><!-- tab-pane -->                        
                                 <p>Участок под строительство 10-ти этажного жилого дома №14 расположен в с.Засечное Пензенского района Пензенской области в районе микрорайона №5 «Терновка» в планировочной зоне Ж-3.</p>
                                 <p>С северной стороны примыкает к участку магазина «МЭТРО КЭШ ЭНД КЭРРИ», с западной стороны примыкает к участку «Петровский квартал», с восточной стороны ограничен ж/д 16 (стр.), с южной стороны примыкает к участку 10-ти этажного ж/д.</p>
                                 <p>Для строительства жилого дома применялись современные и долговечные материалы. Дом состоит из 2-х блок - секций. Пластика фасада решена разнообразием лоджий и балконов. Уникальная для Пензенской области система отделки фасада создает хорошую теплоизоляцию.</p>
                                 <p>В доме предусмотрены однокомнатные квартиры, квартиры студии и двухкомнатные квартиры. На жилых этажах размещены однокомнатные квартиры площадью от 27,9 до 41,0 кв.м., двухкомнатные квартиры площадью от 49,6 до 56,7 кв.м.</p>
                             </div><!-- /tab-pane -->
 
-                            <div class="tab-pane" id="declarations"><!-- tab-pane -->                        
-                                <p>Участок под строительство 10-ти этажного жилого дома №14 расположен в с.Засечное Пензенского района Пензенской области в районе микрорайона №5 «Терновка» в планировочной зоне Ж-3.</p>
+                            <div class="tab-pane" id="declarations"><!-- tab-pane -->
+                                <div class="project-declarations document-list">
+                                    <ul>
+                                        <li><a href="#">Проектная декларация на строительство 14-этажного двух секционного жилого дома №4 в районе микрорайона №5 "Терновка" от 31.03.2010г.</a></li>
+                                        <li><a href="#">ИЗМЕНЕНИЯ от 20.08.2010г.</a></li>
+                                        <li><a href="#">ИЗМЕНЕНИЯ от 20.08.2010г.</a></li>
+                                        <li><a href="#">ИЗМЕНЕНИЯ от 20.08.2010г.</a></li>
+                                        <li><a href="#">ИЗМЕНЕНИЯ от 20.08.2010г.</a></li>
+                                        <li><a href="#">ИЗМЕНЕНИЯ от 20.08.2010г.</a></li>
+                                        <li><a href="#">ИЗМЕНЕНИЯ от 20.08.2010г.</a></li>
+                                    </ul>
+                                </div>
+                                
                             </div><!-- /tab-pane -->
 
                             <div class="tab-pane" id="location"><!-- tab-pane -->                        
