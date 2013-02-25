@@ -86,6 +86,11 @@ p {font-size:12pt; line-height:140%; color:#333;}
 	.w600 {width:600px;}
     .w940 {width:940px;}
 	.per32 {width:32%;}
+        
+        /**/
+        .more-space .w640, .more-space .w260, .more-space .w360,
+        .more-space .w540, .more-space .w450, .more-space .w300, .more-space .w600 
+            {padding: 0 10px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
 
 
 #bottom {position:relative; margin:25px 0;}
@@ -97,6 +102,7 @@ p {font-size:12pt; line-height:140%; color:#333;}
 		.sputnik {background:url(img/sputnik-image.png) center center no-repeat;}
 		.news-ico {background:url(img/news-image.png) center center no-repeat;}
 		.obj-ico {background:url(img/obj-image.png) center center no-repeat;}
+		.doc-ico {background:url(img/file_extension_doc.png) center center no-repeat;}
 .objects {position:relative;}
 .objects .item {position:relative; float:left; margin-bottom:25px;}
 .col3 .item {width:33%;}
@@ -205,10 +211,16 @@ p {font-size:12pt; line-height:140%; color:#333;}
         .bg1 .object .description, .bg1 .photo .description {border-color: #fff;}
 
 .news-list {position:relative;}
-.news-list ul {position:relative; padding:0; margin:0;}
-.news-list ul li {position:relative; display:block; list-style:none;}
+.news-list ul, .news-list .news-list-items {position:relative; padding:0; margin:0;}
+.news-list ul li {position:relative; display:block; list-style:none; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px dotted #eee;}
+.news-list ul li img {width: 64px; height: auto; display: block; float: left; margin-right: 10px; padding: 4px; box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);}
 .news-list ul li span {display:block; color:#999; font-size:10pt;}
-.news-list ul li a {display:block; margin-bottom:15px; font-size:12pt;}
+.news-list ul li a {display:block; font-size:12pt; padding-right: 10px;}
+    .col3 .news-list-items li {float:left; width: 33%;}
+        .col3 .news-list-items li:nth-child(3n+1) {clear: both;}
+    .col2 .news-list-items li {float:left; width: 50%;}
+        .col2 .news-list-items li:nth-child(2n+1) {clear: both;}
+    .col4 .news-list-items li {float:left; width: 25%;}
 
 .order-button {position:relative;}
 .right-block .order-button {margin:35px 0; }
@@ -352,4 +364,4 @@ div.search-page input.search-button {display:block; height: 16px; border: medium
         .catalog-specs th {color: #333;}
         .catalog-specs tr:nth-child(2n) {background: #f6f6f6;}
         
-.text-center {text-align: center;}
+.text-center {text-align: center;} 
