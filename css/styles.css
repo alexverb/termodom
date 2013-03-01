@@ -11,9 +11,9 @@ a img {border:none;}
 .clear { display:block; float:none; clear:both; padding:0; margin:0; height:0;}
 
 a {color:#046E8B;}
-h1, h2, h3, h4 {margin:0 0 15px 0; padding:0; color:#046E8B; font-weight:normal; position:relative;}
+h1, h2, h3, h4 {margin:25px 0 15px 0; padding:0; color:#046E8B; font-weight:normal; position:relative;}
 h1 a, h2 a, h3 a, h4 a {text-decoration:none; border-bottom:1px solid #61a3b6;}
-p {font-size:12pt; line-height:140%; color:#333;}
+p {font-size:12pt; line-height:140%; color:#333; margin-top: 0;}
 
 #page-surround {position:relative; }
 .container {position:relative; width:960px; margin:0 auto; }
@@ -101,8 +101,12 @@ p {font-size:12pt; line-height:140%; color:#333;}
 	.icon {display:block; width:38px; height:38px; position:absolute; left:-42px; top:0;}
 		.sputnik {background:url(img/sputnik-image.png) center center no-repeat;}
 		.news-ico {background:url(img/news-image.png) center center no-repeat;}
+		.newspaper-ico {background:url(img/newspaper.png) center center no-repeat;}
 		.obj-ico {background:url(img/obj-image.png) center center no-repeat;}
 		.doc-ico {background:url(img/file_extension_doc.png) center center no-repeat;}
+		.vacancy-ico {background:url(img/user_orange.png) center center no-repeat;}
+		.house-ico {background:url('img/house_one.png') center center no-repeat;}
+		.question-ico {background:url('img/question.png') center center no-repeat;}
 .objects {position:relative;}
 .objects .item {position:relative; float:left; margin-bottom:25px;}
 .col3 .item {width:33%;}
@@ -162,7 +166,7 @@ p {font-size:12pt; line-height:140%; color:#333;}
 	.object .status span {padding:3px 15px 3px 25px; color:#fff; font-size:10pt; border-radius:12px; box-shadow:inset 0 0 1px 0 rgba(255,255,255,0.41); position:relative;}
 	.object .check-plan-c {border-top: 1px solid #CCCCCC;margin-top: 5px;padding-top: 5px;text-align: center;}
 	.object .check-plan {padding-right: 25px; text-decoration: none; color: #333; font-weight: normal; background: url(img/check-plan.png) no-repeat right center;}
-	.object .status span.completed, .object .progressbar .bar-line .low  {background: #9cce14; /* Old browsers */
+	.object .status span.completed, .progressbar .bar-line .low, a.button-link, input.poll-button  {background: #9cce14; /* Old browsers */
 									background: -moz-linear-gradient(top,  #9cce14 0%, #6ea603 100%); /* FF3.6+ */
 									background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9cce14), color-stop(100%,#6ea603)); /* Chrome,Safari4+ */
 									background: -webkit-linear-gradient(top,  #9cce14 0%,#6ea603 100%); /* Chrome10+,Safari5.1+ */
@@ -183,7 +187,7 @@ p {font-size:12pt; line-height:140%; color:#333;}
 									filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e9adf', endColorstr='#206cca',GradientType=0 ); /* IE6-9 */
 									}
 	.object .status span.in-process i {display:block; position:absolute; left:10px; top:6px; width:12px; height:12px; background:url(img/in-process.png) center center no-repeat;}
-	.object .status span.planed, .object .progressbar .bar-line .middle, .cat-selector span, .menu ul.menu-items li.active, .sidebar-menu ul li.active > a {background: #ff9933; /* Old browsers */
+	.object .status span.planed, .progressbar .bar-line .middle, .cat-selector span, .menu ul.menu-items li.active, .sidebar-menu ul li.active > a {background: #ff9933; /* Old browsers */
 									background: -moz-linear-gradient(top,  #ff9933 0%, #ff7b00 100%); /* FF3.6+ */
 									background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff9933), color-stop(100%,#ff7b00)); /* Chrome,Safari4+ */
 									background: -webkit-linear-gradient(top,  #ff9933 0%,#ff7b00 100%); /* Chrome10+,Safari5.1+ */
@@ -193,7 +197,8 @@ p {font-size:12pt; line-height:140%; color:#333;}
 									filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9933', endColorstr='#ff7b00',GradientType=0 ); /* IE6-9 */
 									}
 	.object .status span.planed i {display:block; position:absolute; left:10px; top:6px; width:12px; height:12px; background:url(img/planed.png) center center no-repeat;}
-.object .progressbar .bar-line .high{
+
+        .progressbar .bar-line .high{
 									background: #ff3333; /* Old browsers */
 									background: -moz-linear-gradient(top,  #ff3333 0%, #d82b2b 100%); /* FF3.6+ */
 									background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff3333), color-stop(100%,#d82b2b)); /* Chrome,Safari4+ */
@@ -203,10 +208,10 @@ p {font-size:12pt; line-height:140%; color:#333;}
 									background: linear-gradient(to bottom,  #ff3333 0%,#d82b2b 100%); /* W3C */
 									filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3333', endColorstr='#d82b2b',GradientType=0 ); /* IE6-9 */
 									}
-	.object .progressbar {position:relative; padding:5px 0; font-size:10pt; color:#ccc;}
-	.object .progressbar .bar-line{height:15px; background:#ccc; border-radius:7px; position:relative;}
-	.object .progressbar .bar-line span{display:block; position:absolute; left:10px; top:0; line-height:14px; font-size:12px; color:#fff;}
-	.object .progressbar .bar-line .middle, .object .progressbar .bar-line .high, .object .progressbar .bar-line .low {height:100%; border-radius:7px;}
+	.progressbar {position:relative; padding:5px 0; font-size:10pt; color:#ccc;}
+	.progressbar .bar-line{height:15px; background:#ccc; border-radius:7px; position:relative;}
+	.progressbar .bar-line span{display:block; position:absolute; left:10px; top:0; line-height:14px; font-size:12px; color:#fff;}
+	.progressbar .bar-line .middle, .progressbar .bar-line .high, .progressbar .bar-line .low {height:100%; border-radius:7px;}
         
         .bg1 .object .description, .bg1 .photo .description {border-color: #fff;}
 
@@ -365,3 +370,27 @@ div.search-page input.search-button {display:block; height: 16px; border: medium
         .catalog-specs tr:nth-child(2n) {background: #f6f6f6;}
         
 .text-center {text-align: center;} 
+
+table.vancancy-list-preview {width: 100%; border:0; border-collapse: collapse;}
+table.vancancy-list-preview td {padding: 10px 5px 10px 0; border-bottom: 1px dashed #ccc;}
+table.vancancy-list-preview tr:first-child td {padding-top: 0;}
+table.vancancy-list-preview td h4 {margin: 0 0 5px; padding: 0;}
+table.vancancy-list-preview td > p {font-size: 12px; font-style: italic; color: #777; margin: 0; padding: 0;}
+    a.button-link {padding: 2px 10px; font-size: 13px; color: #fff; border-radius: 12px; cursor: pointer;}
+    
+.poll {position: relative;}
+.poll h3 {position: relative; margin-top: 0;}
+    form.poll-form {position: relative;}
+    form.poll-form .poll-answer {position: relative; clear: both; padding-bottom: 5px; margin-bottom: 5px; border-bottom: 1px dashed #ddd;}
+    form.poll-form input {float: left;}
+    form.poll-form label {display: block; padding-left: 25px;}
+    form.poll-form input.poll-button {padding: 5px 15px; color: #fff; border:0; border-radius: 14px; margin-top: 5px; cursor: pointer;}
+    
+    .poll-results {position: relative;}
+    .poll-results table {width: 100%; border:0; border-collapse: collapse;}
+    .poll-results table td {padding:8px 5px; border-bottom: 1px dashed #ddd; vertical-align: bottom;}
+    .poll-results table tr:first-child td {padding-top:0;}
+    .poll-results table td p {margin: 0;}
+    .poll-results table td.result-count {font-weight: 700;}
+    .poll-results table td .progressbar {padding-bottom: 0;}
+    .poll-results table td .progressbar .bar-line span {left: 48%;}
