@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Город Спутник</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/dropdown.js"></script>
+<script src="js/bootstrap-tab.js"></script>
+<script>
+	$(function() {
+		var pull 		= $('#pull');
+			menu 		= $('.menu-items');
+			menuHeight	= menu.height();
+
+		$(pull).on('click', function(e) {
+			e.preventDefault();
+			menu.slideToggle();
+		});
+
+		$(window).resize(function(){
+			var w = $(window).width();
+			if(w > 320 && menu.is(':hidden')) {
+				menu.removeAttr('style');
+			}
+		});
+
+                $('#tabs a').click(function (e) {
+                    e.preventDefault();
+                    $(this).tab('show');
+                });
+                $('#tabs a[href="#all-qa"]').tab('show');
+
+	});
+</script>
+
+</head>
+
+<body>
+
+    <div id="page-surround"><!--page surround -->
+    	<div id="header"><!--header -->
+        	<div class="top"><!--header top-->
+            	<div class="container">
+					<div id="logo"><img src="css/img/logo.png" /></div>
+                    <div class="top-tel">
+                    	<p><strong>(841-2) 00-00-00</strong><span> (телефон)</span></p><p><strong>(841-2) 00-00-01</strong><span> (факс)</span></p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div><!--/header top-->
+            <div class="menu"><!--header bottom-->
+            	<div class="container">
+                    <ul class="menu-items">
+                        <li><a href="#">Жилая недвижимость</a></li>
+                        <li><a href="#">Коммерческая недвижимость</a></li>
+                        <li><a href="#">Продукция</a></li>
+                    	<li><a href="#">О компании</a></li>                        
+                        <li><a href="#">Новости</a></li>                        
+                        <li><a href="#">Контакты</a></li>
+                        <div class="clear"></div>
+                    </ul>
+                    <a href="#" id="pull"><span>Меню</span></a>
+                    <div class="clear"></div>
+                </div>            
+            </div><!--header bottom-->
+        </div><!--/header -->
+        <div id="content"><!--content-->
+        	<div class="container">
+            	<div class="left-block w940"><!-- lb -->
+                    <div class="block">
+                    	<h2>Вопрос-ответ</h2>
+                        <div class="block"><!-- QA -->
+                            <ul class="nav-tabs" id="tabs">
+                                <li><a href="#all-qa" data-toggle="tab">Все</a></li>
+                                <li><a href="#qa-to-uc" data-toggle="tab">Вопросы Управляющей компании
+    </a></li>
+                                <li><a href="#qa-to-op" data-toggle="tab">Вопросы отделу продаж</a></li>
+                                <li><a href="#qa-to-termodom" data-toggle="tab">Вопросы строителям компании «Термодом»</a></li>
+                                <div class="clear"></div>
+                            </ul>
+                            <div class="tab-content"><!-- tab content -->
+                                <div class="tab-pane active" id="all-qa"><!-- tab-pane -->
+                                    <div class="block">
+                                        <div class="qa-list"><!-- qa list -->
+                                            <div class="qa"><!-- qa -->
+                                                <div class="qa-question">
+                                                    <div class="header">
+                                                        <h3>Строение номер 14</h3>
+                                                        <p>Автор: <em>Андрей,</em> 06.03.2013 2:36:29</p>
+                                                    </div>
+                                                    <div class="qa-text">
+                                                        <p>Здравствуйте! Срок сдачи в эксплуатацию строения номер 14 второй квартал 13 года. Какова вероятность того, что дом номер 14 будет сдан в первой половине второго квартала?</p>
+                                                    </div>
+                                                    <div class="l-buble"></div>
+                                                </div>
+                                                <div class="qa-answer">
+                                                    <div class="header">
+                                                        <p>Автор: <em>Термодом,</em> 06.03.2013 8:10:52</p>
+                                                    </div>
+                                                    <div class="qa-text">
+                                                        <p>Здравствуйте, строительство идет с опережением графика поэтому сдача строения раньше заявленого срока возможна. </p>
+                                                    </div>
+                                                    <div class="t-buble"></div>
+                                                </div>
+                                            </div><!-- /qa -->
+                                            <div class="qa"><!-- qa -->
+                                                <div class="qa-question">
+                                                    <div class="header">
+                                                        <h3>Повышение цен</h3>
+                                                        <p>Автор: <em>Таня,</em> 05.03.2013 21:03:18</p>
+                                                    </div>
+                                                    <div class="qa-text">
+                                                        <p>Планируется ли повышение цен на однокомнатные квартиры студии за кв метр, в ближайшее время?</p>
+                                                    </div>
+                                                    <div class="l-buble"></div>
+                                                </div>
+                                                <div class="qa-answer">
+                                                    <div class="header">
+                                                        <p>Автор: <em>Термодом,</em> 06.03.2013 8:41:43</p>
+                                                    </div>
+                                                    <div class="qa-text">
+                                                        <p>Здравствуйте, повышение цен в ближайшее время не планируется.</p>
+                                                    </div>
+                                                    <div class="t-buble"></div>
+                                                </div>
+                                            </div><!-- /qa -->
+                                        </div><!-- /qa list -->
+                                    </div>
+                                </div><!-- /tab-pane -->
+                                <div class="tab-pane" id="qa-to-uc"><!-- tab-pane -->
+                                    <div class="block">
+                                        <div class="qa-list"><!-- qa list -->
+                                            <div class="qa"><!-- qa -->
+                                                <div class="qa-question">
+                                                    <div class="header">
+                                                        <h3>Сантехоборудование</h3>
+                                                        <p>Автор: <em>Ринат,</em> 05.03.2013 16:19:30</p>
+                                                    </div>
+                                                    <div class="qa-text">
+                                                        <p>Будут ли устанавливаться полотенцесушители(змеевики) в квартирах студиях и почему нет в них газа</p>
+                                                    </div>
+                                                    <div class="l-buble"></div>
+                                                </div>
+                                                <div class="qa-answer">
+                                                    <div class="header">
+                                                        <p>Автор: <em>Термодом,</em> 06.03.2013 8:49:28</p>
+                                                    </div>
+                                                    <div class="qa-text">
+                                                        <p>Здравствуйте, полотенцесушители будут установлены, в данные квартиры по нормам не предусмотрен газ.</p>
+                                                    </div>
+                                                    <div class="t-buble"></div>
+                                                </div>
+                                            </div><!-- /qa -->
+                                            <div class="qa"><!-- qa -->
+                                                <div class="qa-question">
+                                                    <div class="header">
+                                                        <h3>строение 8</h3>
+                                                        <p>Автор: <em>Яна,</em> 04.03.2013 22:31:05</p>
+                                                    </div>
+                                                    <div class="qa-text">
+                                                        <p>На фото строительного дома №8 лоджии которые из подъезда остеклены. Как будет на самом деле? </p>
+                                                    </div>
+                                                    <div class="l-buble"></div>
+                                                </div>
+                                                <div class="qa-answer">
+                                                    <div class="header">
+                                                        <p>Автор: <em>Термодом,</em> 05.03.2013 8:44:39</p>
+                                                    </div>
+                                                    <div class="qa-text">
+                                                        <p>Здравствуйте, в доме лоджии будут остеклены. </p>
+                                                    </div>
+                                                    <div class="t-buble"></div>
+                                                </div>
+                                            </div><!-- /qa -->
+                                        </div><!-- /qa list -->
+                                    </div>
+                                </div><!-- /tab-pane -->
+                                <div class="clear"></div>
+                            </div><!-- /tab content -->
+                            
+                        </div><!-- /QA -->
+       
+                    </div>
+                </div><!-- /lb -->
+                <div class="clear"></div>
+            </div>
+        </div><!--/content-->
+        
+        <div id="bottom"><!--bottom-->
+        	<div class="container">
+                <div class="copyright">© 2012 Строительный холдинг «Термодом»</div>
+                <div class="branding"><a href="http://divasoft.ru" target="_blank"><img src="css/img/branding.png" width="76" height="18"></a></div>
+                <div class="clear"></div>            
+          </div>
+        </div><!--/bottom-->
+        
+    </div><!--/page surround -->
+
+</body>
+</html>

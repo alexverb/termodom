@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Город Спутник</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/dropdown.js"></script>
+<script>
+	$(function() {
+		var pull 		= $('#pull');
+			menu 		= $('.menu-items');
+			menuHeight	= menu.height();
+
+		$(pull).on('click', function(e) {
+			e.preventDefault();
+			menu.slideToggle();
+		});
+
+		$(window).resize(function(){
+			var w = $(window).width();
+			if(w > 320 && menu.is(':hidden')) {
+				menu.removeAttr('style');
+			}
+		});
+              $('.dropdown-toggle').dropdown() 
+	});
+</script>
+
+</head>
+
+<body>
+
+    <div id="page-surround"><!--page surround -->
+    	<div id="header"><!--header -->
+        	<div class="top"><!--header top-->
+            	<div class="container">
+					<div id="logo"><img src="css/img/logo.png" /></div>
+                    <div class="top-tel">
+                    	<p><strong>(841-2) 00-00-00</strong><span> (телефон)</span></p><p><strong>(841-2) 00-00-01</strong><span> (факс)</span></p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div><!--/header top-->
+            <div class="menu"><!--header bottom-->
+            	<div class="container">
+                    <ul class="menu-items">
+                        <li><a href="#">Жилая недвижимость</a></li>
+                        <li><a href="#">Коммерческая недвижимость</a></li>
+                        <li><a href="#">Продукция</a></li>
+                    	<li><a href="#">О компании</a></li>                        
+                        <li><a href="#">Новости</a></li>                        
+                        <li><a href="#">Контакты</a></li>
+                        <div class="clear"></div>
+                    </ul>
+                    <a href="#" id="pull"><span>Меню</span></a>
+                    <div class="clear"></div>
+                </div>            
+            </div><!--header bottom-->
+        </div><!--/header -->
+        <div id="content"><!--content-->
+        	<div class="container">
+            	<div class="left-block w940"><!-- lb -->
+                    <div class="block">
+                    	<h2>Вакансии</h2>
+                        <div class="dropdown-container"><!-- ddcontainer -->
+                            <a href="#" data-toggle="dropdown" class="dropdown-trigger">Вид объекта <i></i></a>
+                            <div class="cat-selector dropdown-menu"><!-- cat selector -->
+                        	<span>Все</span><a href="#">Обслуживающие</a><a href="#">Стоительные</a><a href="http://google.com">Управляющие</a><a href="#">Еще&nbsp;какие-нибуть</a>
+                                <div class="clear"></div>
+                            </div><!-- /cat selector -->
+                        </div><!-- /ddcontainer -->
+                        <div class="clear" ></div>
+                        <div class="block">
+                            <table class="vancancy-list-preview">
+                                <tr>
+                                    <td><h4><a href="#">Монтажник-высотник</a></h4><p>Еще Аристотель в своей «Политике» говорил, что музыка, воздействуя на человека, доставляет</p></td>
+                                    <td><a class="button-link"><span>Отправить&nbsp;резюме</span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4><a href="#">Строитель</a></h4>
+                                        <p>Септаккорд, так или иначе</p>
+                                    </td>
+                                    <td><a class="button-link"><span>Отправить&nbsp;резюме</span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4><a href="#">Оператор ленточной и дисковой пилораммы</a></h4>
+                                        <p>работа в районе ГПЗ</p>
+                                    </td>
+                                    <td><a class="button-link"><span>Отправить&nbsp;резюме</span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4><a href="#">Машинист грейдера </a></h4>
+                                    </td>
+                                    <td><a class="button-link"><span>Отправить&nbsp;резюме</span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4><a href="#">Инженер по качеству</a></h4>
+                                        <p>высшее строительное  образование, опыт работы в строительстве от 10 лет</p>
+                                    </td>
+                                    <td><a class="button-link"><span>Отправить&nbsp;резюме</span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4><a href="#">Инженер-проектировщик</a></h4>
+                                        <p>специализация-элетроснабжение, опыт работы приветствуется</p>
+                                    </td>
+                                    <td><a class="button-link"><span>Отправить&nbsp;резюме</span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4><a href="#">Заместитель генерального директора по капитальному строительству</a></h4>
+                                        <p>высшее строительное образование, опыт руководящей работы в строительстве от 10 лет, з/п высокая по итогам собеседования, предостовляется служебное жилье с правом выкупа на льготных условиях</p>
+                                    </td>
+                                    <td><a class="button-link"><span>Отправить&nbsp;резюме</span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4><a href="#">Производитель работ на газовый участок</a></h4>
+                                        <p>мужчину с в/о «ТГВ», аттестованного по газу</p>
+                                    </td>
+                                    <td><a class="button-link"><span>Отправить&nbsp;резюме</span></a></td>
+                                </tr>
+                            </table>
+                        </div>
+       
+                    </div>
+                </div><!-- /lb -->
+                <div class="clear"></div>
+            </div>
+        </div><!--/content-->
+        
+        <div id="bottom"><!--bottom-->
+        	<div class="container">
+                <div class="copyright">© 2012 Строительный холдинг «Термодом»</div>
+                <div class="branding"><a href="http://divasoft.ru" target="_blank"><img src="css/img/branding.png" width="76" height="18"></a></div>
+                <div class="clear"></div>            
+          </div>
+        </div><!--/bottom-->
+        
+    </div><!--/page surround -->
+
+</body>
+</html>
