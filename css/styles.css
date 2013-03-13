@@ -20,6 +20,7 @@ p {font-size:12pt; line-height:140%; color:#333; margin-top: 0;}
 .block {position:relative; margin-bottom:15px; clear: both;}
 .float-left {float: left;}
 .float-right {float: right;}
+.nomarginall {margin: 0 !important;}
 #header {position:relative;background: url("img/city.jpg") repeat-x scroll center -44px / contain  transparent}
 #header .top {position:relative; }
 	#logo {position:relative; padding:25px 10px; float:left;}
@@ -119,6 +120,7 @@ p {font-size:12pt; line-height:140%; color:#333; margin-top: 0;}
 		.vacancy-ico {background:url(img/user_orange.png) center center no-repeat;}
 		.house-ico {background:url('img/house_one.png') center center no-repeat;}
 		.question-ico {background:url('img/question.png') center center no-repeat;}
+		.contact-ico {background:url('img/contact_email.png') center center no-repeat;}
 .objects {position:relative;}
 .objects .item {position:relative; float:left; margin-bottom:25px;}
 .col3 .item {width:33%;}
@@ -390,7 +392,8 @@ table.vancancy-list-preview tr:first-child td {padding-top: 0;}
 table.vancancy-list-preview tr td:last-child {text-align: center;}
 table.vancancy-list-preview td h4 {margin: 0 0 5px; padding: 0;}
 table.vancancy-list-preview td > p {display: block; font-size: 12px; font-style: italic; color: #777; margin: 0; padding: 0;}
-    a.button-link {padding: 2px 10px; font-size: 13px; color: #fff; border-radius: 12px; cursor: pointer;}
+    a.button-link {padding: 2px 10px; font-size: 13px; color: #fff; border-radius: 12px; cursor: pointer; visibility: hidden;}
+   table.vancancy-list-preview tr:hover a.button-link {visibility: visible;}
     
 .poll {position: relative;}
 .poll h3 {position: relative; margin-top: 0;}
@@ -459,3 +462,7 @@ table.vancancy-list-preview td > p {display: block; font-size: 12px; font-style:
         border-radius: 3px; color: #fff; cursor: pointer !important;
         text-shadow: 1px 1px 0 #333; box-shadow: 1px 1px 0 0 #537523;
     }
+.contact-list {position: relative; padding: 0; margin: 0;}
+.contact-list li {position: relative;list-style: none; border-bottom: 1px dashed #ddd; padding-bottom: 10px; margin-bottom: 10px;}
+.contact-list li p{margin: 0;}
+.divider {border-top: 1px dashed #ccc; margin: 15px 0;}

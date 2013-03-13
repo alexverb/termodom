@@ -2,11 +2,13 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Город Спутник</title>
+<title>Компания Термодом</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/flexslider.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
 <script>
 	$(function() {
 		var pull 		= $('#pull');
@@ -24,91 +26,164 @@
 				menu.removeAttr('style');
 			}
 		});
+                $('.flexslider-showcase').flexslider({
+                  animation: "slide"
+                });
+                $('.fl-carousel').flexslider({
+                  animation: "slide",
+                  animationLoop: false,
+                  itemWidth: 235,
+                  itemMargin: 0,
+                  minItems: 1,
+                  maxItems: 4,
+                  controlNav: false
+                });
+
 	});
 </script>
 
 </head>
 
 <body>
-<div id="page-surround"><!--page surround -->
-  <div id="header"><!--header -->
-    <div class="top"><!--header top-->
-      <div class="container">
-        <div id="logo"><img src="css/img/logo.png" /></div>
-                    <div class="top-tel">
-                    	<p><strong>(841-2) 00-00-00</strong><span> (телефон)</span></p><p><strong>(841-2) 00-00-01</strong><span> (факс)</span></p>
-                    </div>
-        <div class="clear"></div>
-      </div>
-    </div>
-    <!--/header top-->
-    <div class="menu"><!--header bottom-->
-      <div class="container">
-        <ul class="menu-items">
-          <li><a href="#">О Спутнике</a></li>
-          <li><a href="#">Объекты</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Фотогалерея</a></li>
-          <li class="active">Контакты</li>
-          <div class="clear"></div>
-        </ul>
-        <a href="#" id="pull"><span>Меню</span></a>
 
-        <div id="search">
-          <div class="search-button">
-            <input type="button" />
-          </div>
-          <div class="search-field">
-            <input type="text" value="поиск..."/>
-          </div>
-          <div class="clear"></div>
-        </div>
-        <div class="clear"></div>
-      </div>
-    </div>
-    <!--header bottom--> 
-  </div>
-  <!--/header -->
-  <div class="contacts-map"><!--map-->
-            <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
-            <div id="ymaps-map-id_1355313657278368614714" style="width: 100%; height: 380px;"></div>
-<script type="text/javascript">function fid_1355313657278368614714(ymaps) {var map = new ymaps.Map("ymaps-map-id_1355313657278368614714", {center: [45.009028820937544, 53.148125417656956], zoom: 11, type: "yandex#map"});map.controls.add("zoomControl").add("mapTools").add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));map.geoObjects.add(new ymaps.Placemark([45.043927579394854, 53.13573837874197], {balloonContent: "Компания «Термодом», город Спутник"}, {preset: "twirl#lightblueDotIcon"})).add(new ymaps.Polyline([[45.026675611012195, 53.14389387694613], [45.04023685979147, 53.14487439318547], [45.04255428838035, 53.144616364777505], [45.04341259526511, 53.143635842621094], [45.044785886280735, 53.141881167885856], [45.05431309270165, 53.1366683269631], [45.058518796436985, 53.13145485039], [45.04796162175437, 53.1253880070288], [45.03491535710593, 53.134009189423296], [45.02658978032372, 53.14391882039401]], {balloonContent: ""}, {strokeColor: "ff0000", strokeWidth: 5, strokeOpacity: 0.8}));};</script>
-<script type="text/javascript" src="http://api-maps.yandex.ru/2.0-stable/?lang=ru-RU&coordorder=longlat&load=package.full&wizard=constructor&onload=fid_1355313657278368614714"></script>
-<script type="text/javascript" src="http://api-maps.yandex.ru/2.0-stable/?lang=ru-RU&coordorder=longlat&load=package.full&wizard=constructor&onload=fid_1355313657278368610454"></script>
-            <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
-  </div><!--/map-->
-  <div id="content"><!--content-->
-    <div class="container">
-      <div class="left-block w940"><!-- lb -->
-        <div class="block"><!-- block-->
-            <div class="contacts">
-                <div class="contacts-container">
-                    <h2>мрн. Терновка, г. Спутник, за магазином METRO C&C ул. Радужная д. 1, 2 этаж</h2>
-                    <h3>Тел.: 8(8412) 00-00-00</h3>
+    <div id="page-surround"><!--page surround -->
+    	<div id="header"><!--header -->
+        	<div class="top"><!--header top-->
+            	<div class="container">
+                    <div id="logo"><img src="css/img/logo.png" /></div>
+                    <div class="top-tel">
+                    	<p><strong>(841-2) 00-00-05</strong><span> (телефон)</span></p><p><strong>(841-2) 37-25-70</strong><span> (отдел продаж)</span></p>
+                    </div>
+                    <div class="clear"></div>
                 </div>
+            </div><!--/header top-->
+            <div class="menu"><!--header bottom-->
+            	<div class="container">
+                    <ul class="menu-items">
+                        <li><a href="#">Жилая недвижимость</a></li>
+                        <li><a href="#">Коммерческая недвижимость</a></li>
+                        <li><a href="#">Продукция</a></li>
+                    	<li><a href="#">О компании</a></li>                        
+                        <li><a href="#">Новости</a></li>                        
+                        <li class="active"><a href="#">Контакты</a></li>
+                        <div class="clear"></div>
+                    </ul>
+                    <div class="shadow padding-top"></div>
+                    <a href="#" id="pull"><span>Меню</span></a>
+                    <div class="clear"></div>
+                </div>            
+            </div><!--header bottom-->
+        </div><!--/header -->
+        <div id="content"><!--content-->
+            <div class="showcase" style="margin-top: -44px;"><!--showcase-->
+            <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+            <div id="ymaps-map-id_13631597857016558805" style="width: 100%; height: 350px;"></div>
+            <script type="text/javascript">function fid_13631597857016558805(ymaps) {var map = new ymaps.Map("ymaps-map-id_13631597857016558805", {center: [44.997376, 53.1831879999978], zoom: 13, type: "yandex#map"});map.controls.add("zoomControl").add("mapTools").add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));};</script>
+            <script type="text/javascript" src="http://api-maps.yandex.ru/2.0-stable/?lang=ru-RU&coordorder=longlat&load=package.full&wizard=constructor&onload=fid_13631597857016558805"></script>
+            <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+            </div><!--/showcase-->
+            <div class="container more-space">                
+                <div class="left-block w450"><!-- lb -->
+                    <h2><span class="icon contact-ico"></span>Контактная информация</h2>
+                    <p class="nomarginall"><strong>Офис в г.Спутник:</strong></p>	
+                    <h3 class="nomarginall">мрн.&nbsp;Терновка,&nbsp;г.&nbsp;Спутник,&nbsp;за&nbsp;магазином&nbsp;«METRO&nbsp;C&C», ул. Радужная д. 1, 2 этаж</h3>
+                </div><!-- /lb -->
+                <div class="right-block w450"><!-- lb -->
+                    <h2>&nbsp;</h2>
+                    <p class="nomarginall"><strong>Офис на территории з-да ЖБИ</strong></p>	
+                    <h3 class="nomarginall">Рядом с проходной АМ г. Заречного</h3>
+                </div>
+                <div class="clear"></div>
             </div>
-            <div class="clear"></div>
-        </div><!-- /block--> 
-        <div class="block"><!-- block-->
-            <p>Образ недоступно аннигилирует орнаментальный сказ, заметим, каждое стихотворение объединено вокруг основного философского стержня. Комбинаторное приращение начинает гекзаметр, таким образом постепенно смыкается с сюжетом. Одиннадцатисложник теоретически возможен. Абстрактное высказывание отражает сюжетный коммунальный модернизм, однако дальнейшее развитие приемов декодирования мы находим в работах академика В.Виноградова. Различное расположение, основываясь на парадоксальном совмещении исключающих друг друга принципов характерности и поэтичности, дает глубокий палимпсест, при этом нельзя говорить, что это явления собственно фоники, звукописи. Категория текста многопланово вызывает эпизодический дискурс, потому что сюжет и фабула различаются. </p>
-        </div><!-- /block--> 
-      </div>
-      <!-- /lb -->
-      <div class="clear"></div>
-    </div>
-  </div>
-  <!--/content-->
-  
+            <div class="divider"></div>
+            <div class="container more-space">
+                <div class="left-block w450"><!-- lb -->
+                    <div class="block"><!-- block-->
+                        <ul class="contact-list">
+                        <li>
+                          <p><strong>Генеральный директор ООО ПКФ Термодом</strong></p>
+                          <p>Ибрагимов Рафик Анверович</p>
+                          <p>Телефон: 8(8412)37-25-82, 65-35-29</p>
+                        </li>
+                        <li>
+                          <p><strong>Директор ООО ПУС</strong></p>
+                          <p>Ибрагимов Ренат Рафикович</p>
+                          <p>Телефон: 8(8412)65-35-31</p>
+                        </li>
+                        <li>
+                          <p><strong>Зам.ген.</strong><strong>директора</strong><strong>ООО ПКФ Термодом</strong><strong>по строительству</strong></p>
+                          <p>Заморков Денис Евгеньевич</p>
+                          <p>Телефон: 8(8412)37-25-62</p>
+                        </li>
+                        <li>
+                          <p><strong>Зам.ген. директора</strong><strong>ООО ПКФ Термодом</strong><strong>по общим вопросам</strong></p>
+                          <p>Шафеев Джамиль Алиевич</p>
+                          <p>Телефон: 8(8412)37-26-48</p>
+                        </li>
+                        <li>
+                          <p><strong>Начальник производства</strong></p>
+                          <p>Калинкин Сергей Евгеньевич</p>
+                          <p>Телефон: 8(8412)61-94-81</p>
+                        </li>
+                        <li>
+                          <p><strong>Директор по развитию</strong></p>
+                          <p>Ибрагимов Ильяс Рафикович</p>
+                          <p>Телефон: 8-927-375-82-25</p>
+                        </li>
+                        <li>
+                          <p><strong>Отдел продаж ЖБИ и кирпича</strong></p>
+                          <p>Телефон: 8(8412)65-35-68</p>
+                        </li>
+                        </ul>                    
+                    </div><!-- block-->
+                </div><!-- /lb -->
+                <div class="right-block w450"><!--rb-->
+                    <div class="block"><!-- block-->
+                        <ul class="contact-list">
+                        <li>
+                          <p><strong>Отдел продажи квартир</strong></p>
+                          <p>Телефон: 8(8412)37-25-77; 37-25-70; 25-37-00</p>
+                        </li>
+                        <li>
+                          <p><strong>Отдел продаж термоблоков, лакокраски, металлочерепицы, металлопрофиля и утеплителя</strong></p>
+                          <p>Телефон: 8(8412)73-65-00, 69-96-82, 61-94-81</p>
+                        </li>
+                        <li>
+                          <p><strong>Отдел продаж д</strong><strong>еревянныхи пластиковыхевроокон и дверей</strong></p>
+                          <p>Телефон: 8(8412)73-65-00, 69-96-82</p>
+                        </li>
+                        <li>
+                          <p><strong>Отдел кадров ООО ПКФ Термодом</strong></p>
+                          <p>Телефон: 8(8412)37-25-76</p>
+                        </li>
+                        <li>
+                          <p><strong>Управляющая компания города Спутник</strong></p>
+                          <p>Телефон: 8(8412)37-25-63</p>
+                          <p>Сайт: <a href="http://tarif-sputnik.ru/">http://tarif-sputnik.ru/</a></p>
+                        </li>
+                        <li>
+                          <p><strong>Банковские реквизиты:</strong></p>
+                          <p>ООО ПКФ «Термодом»<br>
+                            Россия, Пензенская обл.,<br>
+                            Пензенский район, с.Засечное, ул.Радужная,1-32<br>
+                            ИНН 5838041075, КПП 582901001</p>
+                        </li>
+                        </ul>                    
+                    </div><!-- block-->
+                </div><!--/rb-->
+                <div class="clear"></div>
+            </div>
+        </div><!--/content-->
+        
         <div id="bottom"><!--bottom-->
-        	<div class="container">
+          <div class="container">
                 <div class="copyright">© 2012 Строительный холдинг «Термодом»</div>
                 <div class="branding"><a href="http://divasoft.ru" target="_blank"><img src="css/img/branding.png" width="76" height="18"></a></div>
                 <div class="clear"></div>            
           </div>
         </div><!--/bottom-->
-  
-</div>
-<!--/page surround -->
+        
+    </div><!--/page surround -->
 
 </body>
 </html>
