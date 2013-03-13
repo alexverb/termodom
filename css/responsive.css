@@ -7,11 +7,13 @@
 	.top-tel p span {display:none;}
         .contacts .contacts-container h2{font-size: 14pt;}
         .object .check-plan {font-size: 10pt;}
+        table.vancancy-list-preview td > p {display: none;}
 }
 
 @media only screen and (max-width: 320px) { 
 	.contacts .contacts-container h2{font-size: 14pt;}
         .object .check-plan {font-size: 10pt;}
+        table.vancancy-list-preview td > p {display: none;}
 }
 
 
@@ -45,6 +47,7 @@
 .open .cat-selector {display: block; position: absolute; top: 100%; z-index: 1000; background: #fff; box-shadow: 0 3px 5px rgba(0,0,0,0.5); padding: 10px; margin-top: 3px; -moz-border-radius: 3px;-webkit-border-radius: 3px;-o-border-radius: 3px;border-radius: 3px; }
 .open .second {right: 10px !important;}
 .open .cat-selector a {display: block; float:none; margin: 5px; border: none;}
+table.vancancy-list-preview td > p {display: none;}
 
 }
 
@@ -71,6 +74,8 @@
 
 .dropdown-container {float:none; width: auto;}
 .cat-selector {float: none; width: auto;}
+
+table.vancancy-list-preview td > p {display: none;}
 
 
 }
