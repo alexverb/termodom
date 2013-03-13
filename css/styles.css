@@ -20,23 +20,20 @@ p {font-size:12pt; line-height:140%; color:#333; margin-top: 0;}
 .block {position:relative; margin-bottom:15px; clear: both;}
 .float-left {float: left;}
 .float-right {float: right;}
-#header {position:relative;}
-#header .top {position:relative; background: url("img/city.jpg") repeat-x scroll center bottom / contain  transparent;}
+#header {position:relative;background: url("img/city.jpg") repeat-x scroll center -44px / contain  transparent}
+#header .top {position:relative; }
 	#logo {position:relative; padding:25px 10px; float:left;}
 	.top-tel {float:right; padding:25px 10px; }
 	.top-tel p {line-height:19px; padding:0; margin:0;color:#999;}
-#header .menu {	position:relative; padding:10px 0; box-shadow:0 1px 2px rgba(0,0,0,0.3);z-index:20;
-				background: #ffffff; /* Old browsers */
-				background: -moz-linear-gradient(top,  #ffffff 65%, #fafafa 100%); /* FF3.6+ */
-				background: -webkit-gradient(linear, left top, left bottom, color-stop(65%,#ffffff), color-stop(100%,#fafafa)); /* Chrome,Safari4+ */
-				background: -webkit-linear-gradient(top,  #ffffff 65%,#fafafa 100%); /* Chrome10+,Safari5.1+ */
-				background: -o-linear-gradient(top,  #ffffff 65%,#fafafa 100%); /* Opera 11.10+ */
-				background: -ms-linear-gradient(top,  #ffffff 65%,#fafafa 100%); /* IE10+ */
-				background: linear-gradient(to bottom,  #ffffff 65%,#fafafa 100%); /* W3C */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fafafa',GradientType=0 ); /* IE6-9 */
-				}	
-	.menu ul.menu-items {position:relative; display:block; padding:0; margin:0; float:left;}
-	.menu ul.menu-items li {position:relative; display:block; float:left; margin:0 15px; font-size:12pt;}
+#header .menu {	position:relative;z-index:20;}	
+	.menu ul.menu-items {
+                            position:relative; display:block; padding:10px 0;
+                            margin:0; text-align: center; border-radius: 21px;
+                            margin:0;
+                            box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+                            background: #fff;
+                            }
+	.menu ul.menu-items li {position:relative; display:inline; margin:0 15px; font-size:12pt;}
 	.menu ul.menu-items li a {text-decoration:none; border-bottom:1px solid #61a3b6;}
 	.menu ul.menu-items li.active {margin:0 7px; padding:0 8px; border-radius:12px;}
 	.menu ul.menu-items li.active a {border-bottom: none; color: #fff;}
@@ -70,11 +67,24 @@ p {font-size:12pt; line-height:140%; color:#333; margin-top: 0;}
     .showcase-block img {display: block; width: 100%;}
     .padding-bottom {padding-bottom: 25px;}
     .padding-top {padding-top: 25px;}
+    .padding-top-x2 {padding-top: 50px;}
     .margin-bottom {margin-bottom: 25px;}
     .margin-top {margin-top: 25px;}
     .bg1 {background: url('img/bg/bg1.png');}
     .inset-shadow {box-shadow: 0 0 5px 0 rgba(0,0,0,0.3) inset;}
     .shadow {background:url(img/map-shadow.png) center top no-repeat;}
+    .menu .shadow {background-size: contain;}
+    .shadow-position-undermenu .shadow {background-position:center 20px; background-size: 940px;}
+    .bg-gradient {
+                    background: #ffffff; /* Old browsers */
+                    background: -moz-linear-gradient(top,  #ffffff 65%, #eeeeee 100%); /* FF3.6+ */
+                    background: -webkit-gradient(linear, left top, left bottom, color-stop(65%,#ffffff), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+                    background: -webkit-linear-gradient(top,  #ffffff 65%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+                    background: -o-linear-gradient(top,  #ffffff 65%,#eeeeee 100%); /* Opera 11.10+ */
+                    background: -ms-linear-gradient(top,  #ffffff 65%,#eeeeee 100%); /* IE10+ */
+                    background: linear-gradient(to bottom,  #ffffff 65%,#eeeeee 100%); /* W3C */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+                }
 
 #content {position:relative;}
 #content .left-block {position:relative;float:left;  margin:0 10px;}
