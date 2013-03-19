@@ -9,6 +9,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="js/dropdown.js"></script>
 <script src="js/bootstrap-tab.js"></script>
+<script src="js/bootstrap-modal.js"></script>
 <script>
 	$(function() {
 		var pull 		= $('#pull');
@@ -32,6 +33,7 @@
                     $(this).tab('show');
                 });
                 $('#tabs a[href="#all-qa"]').tab('show');
+                $('#modalform').modal(options)
 
 	});
 </script>
@@ -72,9 +74,8 @@
             <div class="container">
             	<div class="left-block w940"><!-- lb -->
                     <div class="block">
-                        <a class="btn green float-right">Задать вопрос</a>
                     	<h2>Вопрос-ответ</h2>
-                        
+                        <a href="#modalform" class="btn green absolite-right" data-toggle="modal">Задать вопрос</a>
                         <div class="clear"></div>
                         <div class="block"><!-- QA -->
                             <ul class="nav-tabs" id="tabs">
@@ -187,7 +188,7 @@
                             
                             <!-- important -->
                             <div class="clear"></div>
-                            <a class="btn green float-right">Задать вопрос</a>
+                            <a href="#modalform" class="btn green float-right" data-toggle="modal">Задать вопрос</a>
                             <div class="clear"></div>
                             <!-- /important -->
                             
@@ -206,6 +207,68 @@
                 <div class="clear"></div>            
           </div>
         </div><!--/bottom-->
+        
+        <div id="modalform" class="qa-form hide"><!-- QA Form -->
+            <div class="header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>Задать вопрос</h3>
+            </div>
+            <div class="form-text">
+                <form>
+                    <div class="qa-form-field-group">
+                        <div class="label">
+                            <label>Рубрика: </label>
+                        </div>
+                        <div class="field">
+                            <select>
+                                <option>Общий раздел</option>
+                                <option>Вопросы управляющей компании</option>
+                                <option>ВОпросы отделц продаж</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="qa-form-field-group">
+                        <div class="label">
+                            <label>Автор: </label>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="" placeholder="Ваше имя"/>
+                        </div>
+                    </div>
+                    <div class="qa-form-field-group">
+                        <div class="label">
+                            <label>Email: </label>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="" placeholder="Ваш email"/>
+                        </div>
+                    </div>
+                    <div class="qa-form-field-group">
+                        <div class="label">
+                            <label>Тема: </label>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="" placeholder="Тема сообщения"/>
+                        </div>
+                    </div>
+                    <div class="qa-form-field-group">
+                        <div class="label">
+                            <label>Текст: </label>
+                        </div>
+                        <div class="field">
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                    <div class="qa-form-buttons">
+                        <button data-dismiss="modal" class="btn gray float-right small-margin-left">Закрыть</button>
+                        <button class="btn lime float-right">Отправить</button>
+                        <div class="clear"></div>
+                    </div>
+                </form>
+            </div>
+        </div><!-- /QA Form -->
+
         
     </div><!--/page surround -->
 
