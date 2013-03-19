@@ -21,6 +21,10 @@ p {font-size:12pt; line-height:140%; color:#333; margin-top: 0;}
 .float-right {float: right;}
 .absolite-right {position: absolute; right: 10px; top: 0;}
 .nomarginall {margin: 0 !important;}
+.nomargin-top {margin-top: 0 !important;}
+.nomargin-bottom {margin-bottom: 0 !important;}
+.nomargin-left {margin-left: 0 !important;}
+.nomargin-right {margin-right: 0 !important;}
 .padding-bottom {padding-bottom: 25px;}
 .padding-top {padding-top: 25px;}
 .padding-top-x2 {padding-top: 50px;}
