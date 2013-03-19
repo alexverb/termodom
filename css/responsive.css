@@ -25,7 +25,6 @@
 #content .left-block, #content .right-block {float:none;}
 .objects .item, .photo-stream .photo-col {width:100%; float:none;}
 #search {display:none;}
-.icon {display:none;}
 #pull {display:block;}
 .menu ul.menu-items {display:none; margin:0 0 10px 0;}
 .menu ul.menu-items li {display:block; float:none; margin:5px 15px;}
@@ -59,7 +58,6 @@ table.vancancy-list-preview td > p {display: none;}
 #content .left-block, #content .right-block {float:none;}
 .objects .item, .photo-stream .photo-col {width:50%; float:left; }
 #search {display:none;}
-.icon {display:none;}
 #pull {display:block;}
 .menu ul.menu-items {display:none; margin:0 0 10px 0;}
 .menu ul.menu-items li {display:block; float:none; margin:5px 15px;}
@@ -86,8 +84,6 @@ table.vancancy-list-preview td > p {display: none;}
  {width:auto;}
 #content .left-block, #content .right-block {float:none;}
 .objects .item, .photo-stream .photo-col {width:50%; float:left;}
-#search {display:none;}
-.icon {display:none;}
 .news-block {float:none; width:auto; clear:both;}
 .fr {float:left; width:50%;}
 .right-block .order-button {margin:0;}
@@ -120,7 +116,6 @@ table.vancancy-list-preview td > p {display: none;}
 #content .left-block, #content .right-block {float:none;}
 .objects .item, .photo-stream .photo-col {width:33%; float:left;}
 #search {display:none;}
-.icon {display:none;}
 .news-block {float:none; width:auto; clear:both;}
 .fr {float:left; width:50%;}
 .right-block .order-button {margin:0;}
@@ -148,7 +143,6 @@ table.vancancy-list-preview td > p {display: none;}
  {width:auto;}
 #content .left-block, #content .right-block {float:none;}
 .objects .item, .photo-stream .photo-col {width:33%; float:left;}
-.icon {display:none;}
 .news-block {float:none; width:auto; clear:both;}
 .fr {float:left; width:50%;}
 .right-block .order-button {margin:0;}
@@ -174,7 +168,6 @@ table.vancancy-list-preview td > p {display: none;}
 .w640, .w260, .w360, .w540, .w300, .w600, .w940
  {width:auto;}
 #content .left-block, #content .right-block {float:none;}
-.icon {display:none;}
 .oi {float:left; width:320px;}
 .news-block {float:left; width:50%;}
 .fr {float:right; width:50%;}
