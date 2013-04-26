@@ -168,7 +168,7 @@ p {font-size:12pt; line-height:140%; color:#333; margin-top: 0;}
 /* Site styles */
             
 #page-surround {position:relative; }
-#header {position:relative;background: url("img/city.jpg") repeat-x scroll center -60px;}
+#header {position:relative;background: url("img/city3.jpg") repeat-x scroll center -40px;}
 #header .top {position:relative; }
 	#logo {position:relative; padding:25px 10px; float:left;}
 	.top-tel {float:right; padding:25px 10px; }
@@ -616,4 +616,10 @@ table.vancancy-list-preview  td h4 a {border-bottom:1px dashed;}
                         margin-top: -2px;
                     }
 
-.flying-bittons {position: fixed; right: 0; top: 200px; z-index: 100000;}
+.flying-bittons {position: fixed; right: -70px; top: 200px; z-index: 100000;}
+.demo300 {display:block; width:150px; line-height:40px; font-size:18px; 
+        -moz-transform:    rotate(-90deg);
+         -o-transform:      rotate(-90deg);
+         -webkit-transform: rotate(-90deg);
+         transform:         rotate(-90deg);
+        }
