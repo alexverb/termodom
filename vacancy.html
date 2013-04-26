@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="css/responsive.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="js/dropdown.js"></script>
+<script src="js/bootstrap-modal.js"></script>
 <script>
 	$(function() {
 		var pull 		= $('#pull');
@@ -25,7 +26,8 @@
 				menu.removeAttr('style');
 			}
 		});
-              $('.dropdown-toggle').dropdown() 
+              $('.dropdown-toggle').dropdown()
+              $('#modalform').modal(options)
 	});
 </script>
 
@@ -37,7 +39,7 @@
     	<div id="header"><!--header -->
         	<div class="top"><!--header top-->
             	<div class="container">
-					<div id="logo"><img src="css/img/logo.png" /></div>
+                    <div id="logo"><img src="css/img/logo.png" /></div>
                     <div class="top-tel">
                     	<p><strong>(841-2) 00-00-00</strong><span> (телефон)</span></p><p><strong>(841-2) 00-00-01</strong><span> (факс)</span></p>
                     </div>
@@ -63,9 +65,9 @@
         </div><!--/header -->
         <div id="content"><!--content-->
         	<div class="container">
-            	<div class="left-block w940"><!-- lb -->
+            	<div class="grid-8"><!-- lb -->
                     <div class="block">
-                    	<h2>Вакансии</h2>
+                        <h2 class="nomargin-top">Вакансии</h2>
                         <div class="dropdown-container"><!-- ddcontainer -->
                             <a href="#" data-toggle="dropdown" class="dropdown-trigger">Вид объекта <i></i></a>
                             <div class="cat-selector dropdown-menu"><!-- cat selector -->
@@ -78,7 +80,7 @@
                             <table class="vancancy-list-preview">
                                 <tr>
                                     <td><h4><a href="#">Монтажник-высотник</a></h4><p>Еще Аристотель в своей «Политике» говорил, что музыка, воздействуя на человека, доставляет</p></td>
-                                    <td><a class="button-link"><span>Отправить&nbsp;резюме</span></a></td>
+                                    <td><a href="#modalform" class="button-link" data-toggle="modal"><span>Отправить&nbsp;резюме</span></a></td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -133,6 +135,16 @@
        
                     </div>
                 </div><!-- /lb -->
+                <div class="grid-4">
+                    <div class="block">
+                        <h2 class="nomargin-top">Информация</h2>
+                        <p>Высокая заработная плата, карьерный рост, льготное питание, доставка на работу служебным транспортом. Оформление по трудовой книжке.</p>
+                        <p>Обращаться в отдел кадров по<br /><b>тел.: 8 (841-2) 37-25-76,</b><br/>рабочие дни с 8-00 до 17-00.</p>
+                        <p>Резюме можно отправить на электронный адрес termodompnz@gmail.com, termodom-pnz@mail.ru или<br /><br />
+                            <a href="#modalform" class="btn lime" data-toggle="modal">Заполнить заявку сейчас</a>
+                        </p>
+                    </div>
+                </div>
                 <div class="clear"></div>
             </div>
         </div><!--/content-->
@@ -144,7 +156,76 @@
                 <div class="clear"></div>            
           </div>
         </div><!--/bottom-->
-        
+
+        <div id="modalform" class="qa-form hide"><!-- QA Form -->
+            <div class="header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>Отправить резюме</h3>
+            </div>
+            <div class="form-text">
+                <form>
+                    <div class="qa-form-field-group">
+                        <div class="label">
+                            <label>Вакансия: </label>
+                        </div>
+                        <div class="field">
+                            <select>
+                                <option>Машинист грейдера </option>
+                                <option>Инженер по качеству</option>
+                                <option>Начальник участка гидромеханизации</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="qa-form-field-group">
+                        <div class="label">
+                            <label>Ваше имя: </label>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="" placeholder=""/>
+                        </div>
+                    </div>
+                    <div class="qa-form-field-group">
+                        <div class="label">
+                            <label>Телефон: </label>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="" placeholder=""/>
+                        </div>
+                    </div>
+                    <div class="qa-form-field-group">
+                        <div class="label">
+                            <label>Email: </label>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="" placeholder=""/>
+                        </div>
+                    </div>
+                    <div class="qa-form-field-group">
+                        <div class="label">
+                            <label>Резюме: </label>
+                        </div>
+                        <div class="field">
+                            <input type="file" />
+                        </div>
+                    </div>
+                    <div class="qa-form-field-group">
+                        <div class="label">
+                            <label>Текст: </label>
+                        </div>
+                        <div class="field">
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                    <div class="qa-form-buttons">
+                        <button data-dismiss="modal" class="btn gray float-right small-margin-left">Закрыть</button>
+                        <button class="btn lime float-right">Отправить</button>
+                        <div class="clear"></div>
+                    </div>
+                </form>
+            </div>
+        </div><!-- /QA Form -->
+
     </div><!--/page surround -->
 
 </body>
